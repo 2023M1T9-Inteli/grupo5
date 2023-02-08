@@ -92,6 +92,7 @@ margin_left = 960.0
 margin_top = 24.0
 margin_right = 1000.0
 margin_bottom = 38.0
+uppercase = true
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
 position = Vector2( 952, 29 )
