@@ -1,3 +1,6 @@
 extends Node
 
-var moedas = 0;
+# variavel globla para a contagem de moedas
+
+var moedas1 = 0;
+var moedas2 = 0;
