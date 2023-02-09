@@ -88,12 +88,12 @@ script = ExtResource( 1 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Label" type="Label" parent="CanvasLayer"]
-margin_left = 960.0
+margin_left = 947.0
 margin_top = 24.0
-margin_right = 1000.0
+margin_right = 987.0
 margin_bottom = 38.0
 uppercase = true
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="CanvasLayer"]
-position = Vector2( 952, 29 )
+position = Vector2( 938, 30 )
 frames = SubResource( 18 )
