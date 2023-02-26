@@ -7,7 +7,7 @@
 [ext_resource path="res://Assets/Art/import/Tileset/Room_Builder_16x16.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Art/Sprites Original/Tilemap/24_Ice_Cream_Shop.png" type="Texture" id=6]
 [ext_resource path="res://Assets/Art/import/Tileset/Floors_only_16x16.png" type="Texture" id=7]
-[ext_resource path="res://Assets/Scripts/refrigerator.gd" type="Script" id=8]
+[ext_resource path="res://Assets/Scripts/Geladeira.gd" type="Script" id=8]
 [ext_resource path="res://Assets/Art/Sprites Original/Tilemap/24_Ice_Cream_Shop (1).png" type="Texture" id=9]
 [ext_resource path="res://Assets/Art/Sprites Original/Tilemap/Cozinha_1.png" type="Texture" id=10]
 [ext_resource path="res://Assets/Art/Sprites Original/NPC/NPC.CLIENTE2.png" type="Texture" id=11]

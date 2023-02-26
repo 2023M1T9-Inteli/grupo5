@@ -13,7 +13,6 @@ expand = true
 script = ExtResource( 3 )
 
 [node name="Texture" type="TextureRect" parent="."]
-visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5

@@ -1,3 +1,4 @@
+# Script do jogador
 extends KinematicBody2D
 
 # variavel da velocidade do personagem
@@ -11,7 +12,6 @@ func _physics_process(_delta):
 	motion.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 	motion.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 	motion = motion.normalized()
-	print(motion)
 
 	#Aceleração
 	if Input.get_action_strength("aceleration"):
