@@ -17,11 +17,15 @@ func _on_Refrigerator_body_exited(body):
 func _process(_delta):
 	# Botão para pegar o ovo, só funciona quando o jogador aperta o "E", está na area e tem ovo na geladeira.
 	if Input.is_action_just_pressed("action") and in_area == 1 and Global.tem_ovo == 1:
-		Global.hide_slot1 = 1
+		Global.hide_slot = 1
 		Global.pegou_ovo = 1
 
-	# Botão para pegar o chocolate, só funciona quando o jogador aperta o "E", está na area, já pegou ovo antes e tem chocolate na geladeira.
-	if Input.is_action_just_pressed("action") and in_area == 1 and Global.tem_ovo == 0 and Global.tem_choco == 1:
-		Global.hide_slot3 = 1
-		Global.tem_choco = 0
+	# Botão para pegar o leite, só funciona quando o jogador aperta o "E", está na area, já pegou ovo antes e tem leite na geladeira.
+	if Input.is_action_just_pressed("action") and in_area == 1 and Global.tem_ovo == 0 and Global.tem_leite == 1:
+		Global.hide_slot = 1
+		Global.pegou_leite = 1
+		
+	# Botão para pegar o chocolate, só funciona quando o jogador aperta o "E", está na area, já pegou ovo, leite e farinha antes e tem chocolate na geladeira.
+	if Input.is_action_just_pressed("action") and in_area == 1 and Global.tem_ovo == 0 and Global.tem_leite == 0 and Global.tem_trigo == 0 and Global.tem_choco == 1:
+		Global.hide_slot = 1
 		Global.pegou_choco = 1

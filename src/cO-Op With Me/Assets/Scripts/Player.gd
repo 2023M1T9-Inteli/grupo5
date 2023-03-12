@@ -44,5 +44,11 @@ func _physics_process(_delta):
 		$AnimatedSprite.play("run_back")
 	elif Input.get_action_strength("ui_down"):
 		$AnimatedSprite.play("run_front")
+		
+	if Global.chat == 1:
+		speed = 0
+		$AnimatedSprite.play("idle_front")
+	if Global.chat == 0:
+		speed = 100
 	
 	move_and_slide(motion * speed)

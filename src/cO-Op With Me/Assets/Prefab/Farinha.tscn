@@ -3,6 +3,7 @@
 [ext_resource path="res://Assets/Art/Interface/trigo.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Art/Interface/item_slot_default_background.png" type="Texture" id=2]
 
+
 [node name="Item" type="TextureRect"]
 margin_right = 20.0
 margin_bottom = 20.0

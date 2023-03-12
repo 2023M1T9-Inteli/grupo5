@@ -9,14 +9,11 @@ func _on_Refrigerator_body_entered(body):
 func _on_Refrigerator_body_exited(body):
 	if body.name == "Player":
 		in_area = 0
+		$Label.text = ""
 
-func _process(_delta):
+func _process(delta):
 	print(in_area)
-	if Input.is_action_just_pressed("action") and in_area == 1 and Global.tem_ovo == 1:
-		Global.hide_slot1 = 1
-		Global.pegou_ovo = 1
-		
-	if Input.is_action_just_pressed("action") and in_area == 1 and Global.tem_ovo == 0 and Global.tem_choco == 1:
-		Global.hide_slot3 = 1
-		Global.tem_choco = 0
-		Global.pegou_choco = 1
+	if Input.is_action_just_pressed("action") and in_area == 1:
+		$PopupMenu.popup()
+	elif in_area == 0:
+		$PopupMenu.visible = false
