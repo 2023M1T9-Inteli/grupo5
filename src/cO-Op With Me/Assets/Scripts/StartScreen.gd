@@ -5,7 +5,7 @@ func _ready():
 	
 	
 func _on_Buttonstart_pressed():
-	get_tree().change_scene("res://Assets/Scenes/Introdução.tscn")
+	get_tree().change_scene("res://Assets/Scenes/Fase 01.tscn")
 
 func _on_Buttoncontrols_pressed():
 	get_tree().change_scene ("res://Assets/Prefab/ControlsScreen.tscn")

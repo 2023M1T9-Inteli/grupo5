@@ -9,7 +9,7 @@ func _ready():
 	$Tabuleiro.visible = false
 	$Bolo_assado.visible = false
 	
-func _process(delta):
+func _process(_delta):
 	if Global.pegou_ovo == 1:
 		$Ovo.texture = load("res://Assets/Art/Interface/ovo..png")
 		$Ovo.visible = true

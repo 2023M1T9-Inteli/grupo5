@@ -1,0 +1,21 @@
+{
+	"color": "#ffffffff",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1679247625.json",
+	"mirror_portraits": false,
+	"name": "Laura",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 1,
+	"offset_y": -50,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Assets/Art/Interface/Laura.png"
+		}
+	],
+	"scale": 500,
+	"theme": "theme-1678880292.cfg"
+}

@@ -1,7 +1,6 @@
-# Script do jogador
 extends KinematicBody2D
 
-# variavel da velocidade do personagem
+
 export var speed : float = 100
 # variavel do personagem
 var motion = Vector2.ZERO
@@ -20,8 +19,6 @@ func _physics_process(_delta):
 		speed = 100
 
 	#Animação
-	if Input.get_action_strength("action"):
-		$AnimatedSprite.play("colect_back")
 
 	if Input.is_action_just_released("ui_left"):
 		$AnimatedSprite.play("idle_side")
@@ -44,11 +41,8 @@ func _physics_process(_delta):
 		$AnimatedSprite.play("run_back")
 	elif Input.get_action_strength("ui_down"):
 		$AnimatedSprite.play("run_front")
-		
-	if Global.chat == 1:
+	move_and_slide(motion * speed)
+	
+	if Andar2.chat == 1:
 		speed = 0
 		$AnimatedSprite.play("idle_front")
-	if Global.chat == 0:
-		speed = 100
-	
-	move_and_slide(motion * speed)

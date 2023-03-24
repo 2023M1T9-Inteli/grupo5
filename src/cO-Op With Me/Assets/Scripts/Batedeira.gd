@@ -26,7 +26,18 @@ func _process(_delta):
 		$Temporizador.play("Tempo-batedeira")
 	else:
 		$Temporizador.visible = false
-		
+	
+#	if Global.tem_ovo == 1:
+#		$"Batedeira_animação".play("Bat_normal")
+#	elif Global.pegou_ovo == 1: 
+#		$"Batedeira_animação".play("Bat_brilho_normal")
+#	elif Global.tem_ovo == 0 and Global.pegou_ovo == 0:
+#		$"Batedeira_animação".play("Bat_batendo")
+#	elif Global.pegou_leite == 1:
+#		$"Batedeira_animação".play("Bat_brilho_batendo")
+#	elif Global.pegou_trigo == 1:
+#		$"Batedeira_animação".play("Bat_brilho_batendo")
+	
 	# Botão de interação com o objeto, só funciona quando o jogador aperta o "E", está na area e pegou o ovo.
 	if Input.is_action_just_pressed("action") and in_area == 1 and Global.pegou_ovo == 1:
 		Global.hide_slot = 0

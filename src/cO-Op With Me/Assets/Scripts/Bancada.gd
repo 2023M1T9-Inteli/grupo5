@@ -14,13 +14,15 @@ func _on_Bancada_body_entered(body):
 # Condicional que diz que o jogador entrou da área
 	if body.name == "Player":
 		in_area = 1
+	if body.name == "NPC_Otto":
+		in_area = 2
 
 func _on_Bancada_body_exited(body):
 # Condicional que diz que o jogador saiu da área
 	if body.name == "Player":
 		in_area = 0
 
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_just_pressed("action") and in_area == 1 and Global.tem_choco == 0 and Global.tem_tabuleiro == 1 and Global.hide_slot == 0:
 		Global.hide_slot = 1
 		Global.pegou_tabuleiro = 1
@@ -30,7 +32,10 @@ func _process(delta):
 		Global.hide_slot = 0
 		Global.pegou_bolo_assado = 0
 		Global.tem_bolo_assado = 0
+		Global.colocou_bancada = 1
 		$Bolo.visible = true
-
+	if in_area == 2:
+		$Bolo.visible = false
+		$BoloPronto.visible = true
 
 

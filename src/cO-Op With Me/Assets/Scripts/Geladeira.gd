@@ -8,6 +8,8 @@ func _on_Refrigerator_body_entered(body):
 	# Condicional que diz que o jogador entrou da área
 	if body.name == "Player":
 		in_area = 1
+	if body.name == "NPC_Otto":
+		in_area = 2
 
 func _on_Refrigerator_body_exited(body):
 	# Condicional que diz que o jogador saiu da área

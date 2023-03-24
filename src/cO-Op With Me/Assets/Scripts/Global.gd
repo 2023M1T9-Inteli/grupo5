@@ -21,10 +21,8 @@ var tem_massa: int = 1
 var tem_tabuleiro: int = 1
 var tem_bolo_assado: int = 1
 
+var colocou_bancada: int = 0
 #Variáveis globais do chat
-var chat = 1
+var andar: int = 0
 
-var fala = 0 
-
-
-
+var nome = null

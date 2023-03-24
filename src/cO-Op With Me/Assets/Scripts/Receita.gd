@@ -3,11 +3,11 @@ extends TextureRect
 func _ready():
 	visible = false
 
-func _process(delta):
-	if Global.chat == 0:
-		visible = true
-	else:
+func _process(_delta):
+	if Global.andar == 0:
 		visible = false
+	else:
+		visible = true
 	if Global.tem_ovo == 1:
 		$Ingredientes.visible = true
 		$"Modo de preparo".visible = false

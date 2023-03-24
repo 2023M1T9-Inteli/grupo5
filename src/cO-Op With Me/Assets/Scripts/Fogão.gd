@@ -7,6 +7,8 @@ var notificacao = 0
 func _ready():
 	$Temporizador.visible = false
 	$"Notificação".visible = false
+	$"Fogão_animação".visible = false
+
 
 func _on_Fogo_body_entered(body):
 # Condicional que diz que o jogador entrou da área
@@ -18,7 +20,7 @@ func _on_Fogo_body_exited(body):
 	if body.name == "Player":
 		in_area = 0
 
-func _process(delta):
+func _process(_delta):
 	if notificacao == 1:
 		$Temporizador.visible = true
 		$Temporizador.play("Tempo_fogao")
@@ -35,12 +37,20 @@ func _process(delta):
 		Global.hide_slot = 1
 		Global.pegou_bolo_assado = 1
 		$"Notificação".visible = false
+		
+	if Global.pegou_massa == 1:
+		$"Fogão_animação".visible = true
+		$"Fogão_animação".play("Fog_brilho")
+	elif Global.pegou_massa == 0:
+		$"Fogão_animação".visible = false
+
+		
 
 		
 func _on_Timer_timeout():
 	notificacao = 2
 	$"Notificação".visible = true
-	$Temporizador.visible = false
+
 
 
 	
