@@ -1,0 +1,66 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Assets/Art/Sprites Original/Tela Inicial/Butão/iniciar2.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Art/Sprites Original/Tela Inicial/Tilemap/tela_inicial.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Art/Sprites Original/Tela Inicial/Butão/iniciar1.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Art/Sprites Original/Tela Inicial/Butão/sair2.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Art/Sprites Original/Tela Inicial/Butão/sair1.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Art/Sprites Original/Tela Inicial/Butão/som1.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Art/Sprites Original/Tela Inicial/Butão/som2.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Scripts/Tela_Butões.gd" type="Script" id=8]
+[ext_resource path="res://Assets/Art/Sprites Original/Tela Inicial/Butão/coop1.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Art/Sprites Original/Tela Inicial/Butão/coop2.png" type="Texture" id=10]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 8 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+
+[node name="coop" type="TextureButton" parent="."]
+margin_left = 96.0
+margin_top = 15.0
+margin_right = 126.0
+margin_bottom = 32.0
+texture_normal = ExtResource( 9 )
+texture_hover = ExtResource( 10 )
+expand = true
+
+[node name="Sair" type="TextureButton" parent="."]
+margin_left = 137.0
+margin_top = 60.0
+margin_right = 189.0
+margin_bottom = 76.0
+texture_normal = ExtResource( 5 )
+texture_hover = ExtResource( 4 )
+expand = true
+
+[node name="Iniciar" type="TextureButton" parent="."]
+anchor_left = 0.14
+anchor_right = 1.14
+anchor_bottom = 1.0
+margin_left = 92.2
+margin_top = 15.0
+margin_right = -175.8
+margin_bottom = -149.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 1 )
+expand = true
+
+[node name="Som" type="TextureButton" parent="."]
+margin_left = 137.0
+margin_top = 37.0
+margin_right = 189.0
+margin_bottom = 53.0
+texture_normal = ExtResource( 6 )
+texture_hover = ExtResource( 7 )
+expand = true
+
+[connection signal="pressed" from="coop" to="." method="_on_coop_pressed"]
+[connection signal="pressed" from="Sair" to="." method="_on_TextureButton2_pressed"]
+[connection signal="pressed" from="Iniciar" to="." method="_on_TextureButton1_pressed"]
+[connection signal="pressed" from="Som" to="." method="_on_Som_pressed"]

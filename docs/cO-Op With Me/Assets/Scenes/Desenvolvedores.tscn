@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/Art/Sprites Original/Tela Inicial/tela_vazia.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Art/Interface/Fonte/classic_memesbruh03.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/Art/Sprites Original/Tela Inicial/Butão/back.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Scripts/Desenvolvedores.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 2 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="Label" type="Label" parent="."]
+margin_left = 90.0
+margin_top = 10.0
+margin_right = 425.0
+margin_bottom = 138.0
+rect_scale = Vector2( 0.43, 0.45 )
+custom_fonts/font = SubResource( 1 )
+text = "O seguinte jogo foi desenvolvido por
+Ana Marques, Lauro Emmanuel, 
+Thiago Goulart, Kaleb Carvalho, 
+Keylla Cristina e Mateus Góis. 
+Alunos da turma 9, Inteli 23"
+align = 1
+valign = 1
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 99.0
+margin_top = 61.0
+margin_right = 116.0
+margin_bottom = 78.0
+rect_scale = Vector2( 1, 0.9 )
+texture_normal = ExtResource( 3 )
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

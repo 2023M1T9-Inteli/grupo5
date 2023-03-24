@@ -1,0 +1,13 @@
+{
+	"glossary": [
+
+	],
+	"variables": [
+		{
+			"id": "1679628669-648",
+			"name": "Nome",
+			"type": 0,
+			"value": "$Lineedit.text"
+		}
+	]
+}
