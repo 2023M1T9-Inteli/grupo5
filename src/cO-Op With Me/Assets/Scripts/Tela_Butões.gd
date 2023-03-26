@@ -1,5 +1,5 @@
 extends Control
-
+# Script da tela do menu principal
 func _ready():
 	pass # Replace with function body.
 

@@ -2664,7 +2664,7 @@ tile_data = PoolIntArray( 196613, 536870966, 0, 262149, 536870967, 0, 262152, 53
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Terreno 1"]
 position = Vector2( 88, 62 )
 frames = SubResource( 51 )
-frame = 9
+frame = 10
 playing = true
 
 [node name="MOBÍLIA 2" type="TileMap" parent="Terreno 1"]

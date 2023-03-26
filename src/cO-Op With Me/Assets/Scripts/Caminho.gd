@@ -1,3 +1,4 @@
+# Script da movimentação do NPC Otto na fase 1
 extends Path2D
 
 func _physics_process(delta):
@@ -7,7 +8,7 @@ func _physics_process(delta):
 	if $PathFollow2D.get_offset() < 25 and $PathFollow2D.get_offset() > 1:
 		$PathFollow2D/NPC_Otto/AnimatedSprite.play("run_back")
 
-	#Movimentação
+	#Movimentação, as condicionais a seguir muda a animação e para a movimentação do NPC de acordo com o que o jogador vai fazendo na fase.
 	if Global.andar == 1 and $PathFollow2D.get_offset() < 25:
 		$PathFollow2D.set_offset($PathFollow2D.get_offset() + 30 * delta)
 

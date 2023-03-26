@@ -19,7 +19,6 @@ func _physics_process(_delta):
 		speed = 100
 
 	#Animação
-
 	if Input.is_action_just_released("ui_left"):
 		$AnimatedSprite.play("idle_side")
 		$AnimatedSprite.flip_h = true

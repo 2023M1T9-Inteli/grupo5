@@ -1,3 +1,4 @@
+# Script da label da receita
 extends TextureRect
 
 func _ready():

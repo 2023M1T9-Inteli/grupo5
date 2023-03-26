@@ -1,5 +1,5 @@
 extends Control
-
+# Script da tela de configuração do som
 
 func _ready():
 	pass # Replace with function body.

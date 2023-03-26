@@ -15,12 +15,11 @@
 [ext_resource path="res://Assets/Art/Sprites Original/Tilemap/Room_Builder_Floors_16x16.png" type="Texture" id=13]
 [ext_resource path="res://Assets/Scripts/Armario.gd" type="Script" id=14]
 [ext_resource path="res://Assets/Scripts/Fase1.gd" type="Script" id=15]
-[ext_resource path="res://Assets/Scripts/Micro-ondas.gd" type="Script" id=16]
 [ext_resource path="res://Assets/Art/import/Tileset/outdoor.png" type="Texture" id=17]
 [ext_resource path="res://Assets/Art/Sprites Original/Tilemap/Room_Builder_16x16.png" type="Texture" id=18]
-[ext_resource path="res://Assets/Art/Sprites Original/NPC/atendente.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Art/Sprites Original/NPC/NPC_ATENDENTE.png" type="Texture" id=19]
 [ext_resource path="res://Assets/Scripts/Bancada.gd" type="Script" id=20]
-[ext_resource path="res://Assets/Art/Interface/Arroz Con Pollo.mp3" type="AudioStream" id=21]
+[ext_resource path="res://Assets/Art/Audio/Arroz Con Pollo.mp3" type="AudioStream" id=21]
 [ext_resource path="res://Assets/Art/Interface/Tabuleiro vazio.png" type="Texture" id=22]
 [ext_resource path="res://Assets/Art/Interface/Notificação.png" type="Texture" id=23]
 [ext_resource path="res://Assets/Art/import/Kitchen/UI_16x16.png" type="Texture" id=24]
@@ -1361,6 +1360,24 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=89]
 extents = Vector2( 7.5, 8.5 )
 
+[sub_resource type="GDScript" id=238]
+script/source = "# Script para interação com o micro-ondas
+extends Area2D
+
+# Variável que diz se o jogador está na área
+var in_area = 0
+
+func _on_Microondas_body_entered(body):
+	# Condicional que diz que o jogador entrou da área
+	if body.name == \"Player\":
+		in_area = 1
+
+func _on_Microondas_body_exited(body):
+	# Condicional que diz que o jogador saiu da área
+	if body.name == \"Player\":
+		in_area = 0
+"
+
 [sub_resource type="RectangleShape2D" id=96]
 extents = Vector2( 8.5, 7 )
 
@@ -1880,7 +1897,7 @@ shape = SubResource( 89 )
 
 [node name="Micro-ondas" type="Area2D" parent="Areas"]
 position = Vector2( 97, 92 )
-script = ExtResource( 16 )
+script = SubResource( 238 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -1961,7 +1978,7 @@ position = Vector2( 19, 284 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Personagens/NPC_Client"]
 frames = SubResource( 63 )
 animation = "sit"
-frame = 5
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Personagens/NPC_Client"]
@@ -1985,6 +2002,7 @@ position = Vector2( 3, -5 )
 position = Vector2( 3, -12 )
 frames = SubResource( 143 )
 animation = "idle_front"
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Personagens/Path2D/PathFollow2D/NPC_Otto"]
@@ -1998,6 +2016,9 @@ __meta__ = {
 "_edit_group_": true,
 "_editor_description_": "		"
 }
+
+[node name="AnimatedSprite" parent="Personagens/Player" index="0"]
+frame = 5
 
 [node name="Camera2D" type="Camera2D" parent="Personagens/Player"]
 visible = false
@@ -2022,6 +2043,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Personagens/NPC_Atendente"]
 frames = SubResource( 81 )
 animation = "atendente_idle"
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Personagens/NPC_Atendente"]

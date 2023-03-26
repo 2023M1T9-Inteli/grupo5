@@ -1,5 +1,8 @@
 extends Path2D
 
+# Script da animação da introdução
+
+# Variável que recebe o plugin de dialogo 
 var dialogo1 = Dialogic.start('chefe 1')
 
 func _process(delta):
@@ -15,5 +18,6 @@ func _process(delta):
 		$PathFollow2D/Player_indro/AnimatedSprite.play("idle_side")
 
 func _on_Area2D_body_entered(body):
+	# Quando o jogador entra na area o dialogo começa
 	if body.name == "Player_indro":
 		get_parent().add_child(dialogo1)

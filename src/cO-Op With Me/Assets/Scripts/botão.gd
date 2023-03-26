@@ -1,12 +1,6 @@
+# Script da mecanica da fase 2, ainda em desevolvimento.
 extends Control
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	Andar2.chat == 0
 	$ColorRect.visible = false

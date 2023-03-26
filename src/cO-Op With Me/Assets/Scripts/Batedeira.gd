@@ -26,18 +26,7 @@ func _process(_delta):
 		$Temporizador.play("Tempo-batedeira")
 	else:
 		$Temporizador.visible = false
-	
-#	if Global.tem_ovo == 1:
-#		$"Batedeira_animação".play("Bat_normal")
-#	elif Global.pegou_ovo == 1: 
-#		$"Batedeira_animação".play("Bat_brilho_normal")
-#	elif Global.tem_ovo == 0 and Global.pegou_ovo == 0:
-#		$"Batedeira_animação".play("Bat_batendo")
-#	elif Global.pegou_leite == 1:
-#		$"Batedeira_animação".play("Bat_brilho_batendo")
-#	elif Global.pegou_trigo == 1:
-#		$"Batedeira_animação".play("Bat_brilho_batendo")
-	
+
 	# Botão de interação com o objeto, só funciona quando o jogador aperta o "E", está na area e pegou o ovo.
 	if Input.is_action_just_pressed("action") and in_area == 1 and Global.pegou_ovo == 1:
 		Global.hide_slot = 0
@@ -48,16 +37,19 @@ func _process(_delta):
 		Global.hide_slot = 0
 		Global.pegou_leite = 0
 		Global.tem_leite = 0
+	#Botão de interação com o objeto
 	if Input.is_action_just_pressed("action") and in_area == 1 and Global.pegou_trigo == 1:
 		Global.hide_slot = 0
 		Global.pegou_trigo = 0
 		Global.tem_trigo = 0
+	#Botão de interação com o objeto
 	if Input.is_action_just_pressed("action") and in_area == 1 and Global.pegou_choco == 1:
 		Global.hide_slot = 0
 		Global.pegou_choco = 0
 		Global.tem_choco = 0
 		$Timer.start()
 		notificacao = 1
+	#Botão de interação com o objeto
 	if Input.is_action_just_pressed("action") and in_area == 1 and Global.tem_tabuleiro == 0  and notificacao == 0 and Global.pegou_tabuleiro == 1 and Global.tem_massa == 1:
 		Global.hide_slot = 1
 		Global.pegou_massa = 1

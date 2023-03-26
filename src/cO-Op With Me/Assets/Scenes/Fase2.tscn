@@ -2688,7 +2688,6 @@ tile_data = PoolIntArray( 458761, 0, 0 )
 position = Vector2( 160, 57 )
 frames = SubResource( 158 )
 animation = "idle_front"
-frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC2"]
@@ -2706,7 +2705,6 @@ script = ExtResource( 4 )
 position = Vector2( -17.9949, -7.0131 )
 frames = SubResource( 140 )
 animation = "idle_front"
-frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player"]

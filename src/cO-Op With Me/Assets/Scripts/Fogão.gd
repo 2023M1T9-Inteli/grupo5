@@ -26,27 +26,24 @@ func _process(_delta):
 		$Temporizador.play("Tempo_fogao")
 	else:
 		$Temporizador.visible = false
+	#Botão de interação com o objeto
 	if Input.is_action_just_pressed("action") and in_area == 1 and Global.pegou_massa == 1:
 		Global.hide_slot = 0
 		Global.pegou_massa = 0
 		Global.tem_massa = 0
 		$Timer.start()
 		notificacao = 1
-
+	#Botão de interação com o objeto
 	if Input.is_action_just_pressed("action") and in_area == 1 and Global.tem_bolo_assado == 1 and notificacao == 2: #and Global.tem_massa == 0 and Global.pegou_massa == 0:
 		Global.hide_slot = 1
 		Global.pegou_bolo_assado = 1
 		$"Notificação".visible = false
-		
+	#Botão de interação com o objeto
 	if Global.pegou_massa == 1:
 		$"Fogão_animação".visible = true
 		$"Fogão_animação".play("Fog_brilho")
 	elif Global.pegou_massa == 0:
 		$"Fogão_animação".visible = false
-
-		
-
-		
 func _on_Timer_timeout():
 	notificacao = 2
 	$"Notificação".visible = true

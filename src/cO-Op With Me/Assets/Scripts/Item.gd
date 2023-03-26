@@ -1,6 +1,9 @@
 extends TextureRect
 
+# Script da hotbar
+
 func _ready():
+	# Deixa todos os itens invisivel
 	$Ovo.visible = false
 	$Leite.visible = false
 	$Trigo.visible = false
@@ -10,6 +13,7 @@ func _ready():
 	$Bolo_assado.visible = false
 	
 func _process(_delta):
+	# As condicionais a seguir deixa visivel e invisivel os itens de acordo com as interações do jogador
 	if Global.pegou_ovo == 1:
 		$Ovo.texture = load("res://Assets/Art/Interface/ovo..png")
 		$Ovo.visible = true
