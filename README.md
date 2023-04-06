@@ -7,9 +7,8 @@
 </p>
 
 
-Equipe Talk²Me
-
-## Integrantes: <a href="https://www.linkedin.com/in/ana-clara-madureira-marques-a6019526a/">Ana Marques</a>, <a href="https://www.linkedin.com/in/kaleb-carvalho/">Kaleb Carvalho</a>, <a href="https://www.linkedin.com/in/keylla-oliveira1206/">Keylla Oliveira</a>, <a href="https://www.linkedin.com/in/lauroemmanuelrafael/">Lauro Rafael</a>, <a href="https://www.linkedin.com/in/mateus-mar%C3%A7al-212953264/">Mateus Marcal</a>, <a href="https://www.linkedin.com/in/thiago-goulart-de-oliveira/">Thiago Goulart</a>
+## Equipe Talk²Me
+Integrantes: <a href="https://www.linkedin.com/in/ana-clara-madureira-marques-a6019526a/">Ana Marques</a>, <a href="https://www.linkedin.com/in/kaleb-carvalho/">Kaleb Carvalho</a>, <a href="https://www.linkedin.com/in/keylla-oliveira1206/">Keylla Oliveira</a>, <a href="https://www.linkedin.com/in/lauroemmanuelrafael/">Lauro Rafael</a>, <a href="https://www.linkedin.com/in/mateus-mar%C3%A7al-212953264/">Mateus Marcal</a>, <a href="https://www.linkedin.com/in/thiago-goulart-de-oliveira/">Thiago Goulart</a>
 
 <p align="center">
 <img src="time.png" alt="Foto dos integrantes da equipe" border="0"></a>
