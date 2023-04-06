@@ -1,16 +1,19 @@
 # Inteli - Instituto de Tecnologia e Liderança 
-# Equipe Talk²Me #
+# cO-Op with me #
 
 
 <p align="center">
-<img src="time.png" alt="Foto dos membros da Equipe Talk²Me" border="0"></a>
+<img src="cO-Op.png" alt="Logo cO-Op with me" border="0"></a>
 </p>
 
-Co-op With Me
 
-Talk²Me
+Equipe Talk²Me
 
 ## Integrantes: <a href="https://www.linkedin.com/in/ana-clara-madureira-marques-a6019526a/">Ana Marques</a>, <a href="https://www.linkedin.com/in/kaleb-carvalho/">Kaleb Carvalho</a>, <a href="https://www.linkedin.com/in/keylla-oliveira1206/">Keylla Oliveira</a>, <a href="https://www.linkedin.com/in/lauroemmanuelrafael/">Lauro Rafael</a>, <a href="https://www.linkedin.com/in/mateus-mar%C3%A7al-212953264/">Mateus Marcal</a>, <a href="https://www.linkedin.com/in/thiago-goulart-de-oliveira/">Thiago Goulart</a>
+
+<p align="center">
+<img src="time.png" alt="Foto dos integrantes da equipe" border="0"></a>
+</p>
 
 ## Descrição
 
@@ -19,7 +22,7 @@ Talk²Me
 Ele foi inspirado na ideia de multiverso presente no filme "Tudo em Todo o Lugar ao Mesmo Tempo", assim ensinando à quem jogar como a colaboração funciona em diferentes cenários e contextos.
 <br><br>
 <p align="center">
-<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
+<img src="cO-Op.png" alt="NOME DO JOGO" border="0">
   Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
 
