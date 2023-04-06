@@ -3,7 +3,7 @@
 
 
 <p align="center">
-<a href= "cO-Op.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
+<img src="time.png" alt="Foto dos membros da Equipe Talk²Me" border="0"></a>
 </p>
 
 Co-op With Me
