@@ -6,17 +6,17 @@
 <a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
-# Nome do Projeto
+Co-op With Me
 
-## Nome do Grupo
+Talk²Me
 
-## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Goku Sayajin</a>, <a href="https://www.linkedin.com/in/victorbarq/">Saitama One</a>, <a href="https://www.linkedin.com/in/victorbarq/">Ikki de Fenix</a>, <a href="https://www.linkedin.com/in/victorbarq/">Yusuke Urameshi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
+## Integrantes: <a href="https://www.linkedin.com/in/ana-clara-madureira-marques-a6019526a/">Ana Marques</a>, <a href="https://www.linkedin.com/in/kaleb-carvalho/">Kaleb Carvalho</a>, <a href="https://www.linkedin.com/in/keylla-oliveira1206/">Keylla Oliveira</a>, <a href="https://www.linkedin.com/in/lauroemmanuelrafael/">Lauro Rafael</a>, <a href="https://www.linkedin.com/in/mateus-mar%C3%A7al-212953264/">Mateus Marcal</a>, <a href="https://www.linkedin.com/in/thiago-goulart-de-oliveira/">Thiago Goulart</a>
 
 ## Descrição
 
-📜 Descrição curta sobre o que seu projeto faz.
+📜 cO-Op with me é um jogo criado para a Cia de Talentos com o objetivo de ensinar aos players o conceito de colaboração.
 <br><br>
-Meu projeto é um exemplo de como utilizar o github.
+Ele foi inspirado na ideia de multiverso presente no filme "Tudo em Todo o Lugar ao Mesmo Tempo", assim ensinando à quem jogar como a colaboração funciona em diferentes cenários e contextos.
 <br><br>
 <p align="center">
 <img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
