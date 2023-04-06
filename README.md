@@ -21,7 +21,7 @@
 
 📜 cO-Op with me é um jogo criado para a Cia de Talentos com o objetivo de ensinar aos players o conceito de colaboração.
 Ele foi inspirado na ideia de multiverso presente no filme "Tudo em Todo o Lugar ao Mesmo Tempo", assim, ensinando à quem jogar como a colaboração funciona em diferentes cenários e contextos.
-<br><br>
+<br>
 <p align="center">
 <img src="cO-Op.png" alt="NOME DO JOGO" border="0">
   Game by <a href="http://www.nyphotographic.com/">Talk²Me</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
