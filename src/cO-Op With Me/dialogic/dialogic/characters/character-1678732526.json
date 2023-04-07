@@ -1,0 +1,21 @@
+{
+	"color": "#ffffffff",
+	"description": "",
+	"display_name": "Cia de Talentos",
+	"display_name_bool": true,
+	"id": "character-1678732526.json",
+	"mirror_portraits": false,
+	"name": "Mestre",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 1,
+	"offset_y": -20,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Assets/Art/Interface/robo.png"
+		}
+	],
+	"scale": 250,
+	"theme": "theme-1678880292.cfg"
+}

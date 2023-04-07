@@ -4,6 +4,7 @@ extends KinematicBody2D
 export var speed : float = 100
 # variavel do personagem
 var motion = Vector2.ZERO
+var chat = 0
 
 func _physics_process(_delta):
 
@@ -19,6 +20,7 @@ func _physics_process(_delta):
 		speed = 100
 
 	#Animação
+
 	if Input.is_action_just_released("ui_left"):
 		$AnimatedSprite.play("idle_side")
 		$AnimatedSprite.flip_h = true
@@ -41,7 +43,10 @@ func _physics_process(_delta):
 	elif Input.get_action_strength("ui_down"):
 		$AnimatedSprite.play("run_front")
 	move_and_slide(motion * speed)
-	
-	if Andar2.chat == 1:
+
+#Condição para o player não andar durante os diálogos	
+	if Global.andar == 0:
 		speed = 0
 		$AnimatedSprite.play("idle_front")
+	else:
+		speed = 100

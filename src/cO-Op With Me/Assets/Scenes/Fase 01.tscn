@@ -1,4 +1,4 @@
-[gd_scene load_steps=168 format=2]
+[gd_scene load_steps=235 format=2]
 
 [ext_resource path="res://Assets/Prefab/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Scripts/Caminho.gd" type="Script" id=2]
@@ -15,22 +15,31 @@
 [ext_resource path="res://Assets/Art/Sprites Original/Tilemap/Room_Builder_Floors_16x16.png" type="Texture" id=13]
 [ext_resource path="res://Assets/Scripts/Armario.gd" type="Script" id=14]
 [ext_resource path="res://Assets/Scripts/Fase1.gd" type="Script" id=15]
-[ext_resource path="res://Assets/Art/import/Tileset/outdoor.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Art/Sprites Original/Tilemap/Kitchen/batedeira_acao.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Art/Sprites Original/Tilemap/outdoor.png" type="Texture" id=17]
 [ext_resource path="res://Assets/Art/Sprites Original/Tilemap/Room_Builder_16x16.png" type="Texture" id=18]
 [ext_resource path="res://Assets/Art/Sprites Original/NPC/NPC_ATENDENTE.png" type="Texture" id=19]
 [ext_resource path="res://Assets/Scripts/Bancada.gd" type="Script" id=20]
 [ext_resource path="res://Assets/Art/Audio/Arroz Con Pollo.mp3" type="AudioStream" id=21]
 [ext_resource path="res://Assets/Art/Interface/Tabuleiro vazio.png" type="Texture" id=22]
 [ext_resource path="res://Assets/Art/Interface/Notificação.png" type="Texture" id=23]
-[ext_resource path="res://Assets/Art/import/Kitchen/UI_16x16.png" type="Texture" id=24]
+[ext_resource path="res://Assets/Art/Sprites Original/Tilemap/Kitchen/UI_16x16.png" type="Texture" id=24]
 [ext_resource path="res://Assets/Art/Interface/Bolo pronto.png" type="Texture" id=25]
 [ext_resource path="res://Assets/Art/Interface/Bolo .png" type="Texture" id=26]
 [ext_resource path="res://Assets/Art/Interface/RECEITA.png" type="Texture" id=27]
-[ext_resource path="res://Assets/Art/Interface/fonte/classic_memesbruh03.ttf" type="DynamicFontData" id=28]
+[ext_resource path="res://Assets/Art/Interface/fonte/classic.ttf" type="DynamicFontData" id=28]
 [ext_resource path="res://Assets/Scripts/Receita.gd" type="Script" id=29]
 [ext_resource path="res://Assets/Art/Interface/Fogao.png" type="Texture" id=30]
-[ext_resource path="res://Assets/Art/Sprites Original/Tilemap/animated_kitchen_kneader.png" type="Texture" id=31]
-[ext_resource path="res://Assets/Art/Sprites Original/Tilemap/animacao_cozinha.png" type="Texture" id=32]
+[ext_resource path="res://Assets/Art/Sprites Original/Tilemap/Kitchen/batedeira_acao_borda.png" type="Texture" id=31]
+[ext_resource path="res://Assets/Art/Sprites Original/Tilemap/Kitchen/armario_borda.png" type="Texture" id=32]
+[ext_resource path="res://Assets/Art/Sprites Original/Tilemap/Kitchen/batedeira_borda.png" type="Texture" id=33]
+[ext_resource path="res://Assets/Art/Sprites Original/Tilemap/Kitchen/geladeira_borda.png" type="Texture" id=34]
+[ext_resource path="res://Assets/Art/Sprites Original/Tilemap/Kitchen/animated_fridge.png" type="Texture" id=35]
+[ext_resource path="res://Assets/Art/Sprites Original/Tilemap/Kitchen/bancada_borda.png" type="Texture" id=36]
+[ext_resource path="res://Assets/Art/Sprites Original/Tilemap/Kitchen/fogao_borda.png" type="Texture" id=37]
+[ext_resource path="res://Assets/Art/Sprites Original/Tilemap/Kitchen/fogao_acao.png" type="Texture" id=38]
+[ext_resource path="res://Assets/Scripts/Path2D2.gd" type="Script" id=39]
+[ext_resource path="res://Assets/Art/Sprites Original/NPC/atendente.png" type="Texture" id=40]
 
 [sub_resource type="DynamicFont" id=108]
 font_data = ExtResource( 28 )
@@ -1292,73 +1301,256 @@ animations = [ {
 "speed": 1.0
 } ]
 
-[sub_resource type="AtlasTexture" id=225]
-atlas = ExtResource( 32 )
-region = Rect2( 170, 0, 32, 34 )
+[sub_resource type="AtlasTexture" id=297]
+atlas = ExtResource( 38 )
+region = Rect2( 0, 0, 48, 32 )
 
-[sub_resource type="AtlasTexture" id=226]
-atlas = ExtResource( 32 )
-region = Rect2( 202, 0, 32, 34 )
+[sub_resource type="AtlasTexture" id=298]
+atlas = ExtResource( 38 )
+region = Rect2( 48, 0, 48, 32 )
+
+[sub_resource type="AtlasTexture" id=299]
+atlas = ExtResource( 38 )
+region = Rect2( 96, 0, 48, 32 )
+
+[sub_resource type="AtlasTexture" id=300]
+atlas = ExtResource( 38 )
+region = Rect2( 144, 0, 48, 32 )
+
+[sub_resource type="AtlasTexture" id=279]
+atlas = ExtResource( 37 )
+region = Rect2( 0, 0, 48, 32 )
+
+[sub_resource type="AtlasTexture" id=280]
+atlas = ExtResource( 37 )
+region = Rect2( 48, 0, 48, 32 )
+
+[sub_resource type="AtlasTexture" id=301]
+atlas = ExtResource( 38 )
+region = Rect2( 144, 0, 48, 32 )
+
+[sub_resource type="AtlasTexture" id=302]
+atlas = ExtResource( 38 )
+region = Rect2( 96, 0, 48, 32 )
+
+[sub_resource type="AtlasTexture" id=303]
+atlas = ExtResource( 38 )
+region = Rect2( 48, 0, 48, 32 )
+
+[sub_resource type="AtlasTexture" id=304]
+atlas = ExtResource( 38 )
+region = Rect2( 0, 0, 48, 32 )
+
+[sub_resource type="AtlasTexture" id=281]
+atlas = ExtResource( 37 )
+region = Rect2( 0, 0, 48, 32 )
 
 [sub_resource type="SpriteFrames" id=189]
 animations = [ {
-"frames": [ SubResource( 225 ), SubResource( 226 ) ],
+"frames": [ SubResource( 297 ), SubResource( 298 ), SubResource( 299 ), SubResource( 300 ) ],
+"loop": false,
+"name": "fog_abrindo",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 279 ), SubResource( 280 ) ],
 "loop": true,
-"name": "Fog_brilho",
+"name": "fog_brilho",
 "speed": 2.0
+}, {
+"frames": [ SubResource( 301 ), SubResource( 302 ), SubResource( 303 ), SubResource( 304 ) ],
+"loop": false,
+"name": "fog_fechando",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 281 ) ],
+"loop": true,
+"name": "fog_normal",
+"speed": 5.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=18]
 extents = Vector2( 7.5, 5.25 )
 
+[sub_resource type="AtlasTexture" id=331]
+atlas = ExtResource( 35 )
+region = Rect2( 0, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=332]
+atlas = ExtResource( 35 )
+region = Rect2( 48, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=333]
+atlas = ExtResource( 35 )
+region = Rect2( 96, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=334]
+atlas = ExtResource( 35 )
+region = Rect2( 144, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=335]
+atlas = ExtResource( 35 )
+region = Rect2( 192, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=336]
+atlas = ExtResource( 35 )
+region = Rect2( 240, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=338]
+atlas = ExtResource( 34 )
+region = Rect2( 0, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=339]
+atlas = ExtResource( 34 )
+region = Rect2( 48, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=340]
+atlas = ExtResource( 35 )
+region = Rect2( 240, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=341]
+atlas = ExtResource( 35 )
+region = Rect2( 192, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=342]
+atlas = ExtResource( 35 )
+region = Rect2( 144, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=343]
+atlas = ExtResource( 35 )
+region = Rect2( 96, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=344]
+atlas = ExtResource( 35 )
+region = Rect2( 48, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=345]
+atlas = ExtResource( 35 )
+region = Rect2( 0, 0, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=346]
+atlas = ExtResource( 34 )
+region = Rect2( 0, 0, 48, 48 )
+
+[sub_resource type="SpriteFrames" id=265]
+animations = [ {
+"frames": [ SubResource( 331 ), SubResource( 332 ), SubResource( 333 ), SubResource( 334 ), SubResource( 335 ), SubResource( 336 ) ],
+"loop": false,
+"name": "abrindo",
+"speed": 10.0
+}, {
+"frames": [ SubResource( 338 ), SubResource( 339 ) ],
+"loop": true,
+"name": "brilho",
+"speed": 2.0
+}, {
+"frames": [ SubResource( 340 ), SubResource( 341 ), SubResource( 342 ), SubResource( 343 ), SubResource( 344 ), SubResource( 345 ) ],
+"loop": false,
+"name": "fechando",
+"speed": 10.0
+}, {
+"frames": [ SubResource( 346 ) ],
+"loop": true,
+"name": "normal",
+"speed": 5.0
+} ]
+
 [sub_resource type="RectangleShape2D" id=88]
 extents = Vector2( 10, 7.5 )
 
-[sub_resource type="AtlasTexture" id=236]
+[sub_resource type="AtlasTexture" id=239]
+atlas = ExtResource( 16 )
+region = Rect2( 0, 0, 48, 32 )
+
+[sub_resource type="AtlasTexture" id=240]
+atlas = ExtResource( 16 )
+region = Rect2( 48, 0, 48, 32 )
+
+[sub_resource type="AtlasTexture" id=241]
+atlas = ExtResource( 16 )
+region = Rect2( 96, 0, 48, 32 )
+
+[sub_resource type="AtlasTexture" id=242]
+atlas = ExtResource( 16 )
+region = Rect2( 144, 0, 48, 32 )
+
+[sub_resource type="AtlasTexture" id=243]
 atlas = ExtResource( 31 )
-region = Rect2( 32, 0, 31, 32 )
+region = Rect2( 0, 0, 48, 32 )
 
-[sub_resource type="AtlasTexture" id=237]
+[sub_resource type="AtlasTexture" id=244]
 atlas = ExtResource( 31 )
-region = Rect2( 96, 0, 32, 32 )
+region = Rect2( 48, 0, 48, 32 )
 
-[sub_resource type="AtlasTexture" id=233]
-atlas = ExtResource( 32 )
-region = Rect2( 0, 45, 32, 45 )
+[sub_resource type="AtlasTexture" id=245]
+atlas = ExtResource( 31 )
+region = Rect2( 96, 0, 48, 32 )
 
-[sub_resource type="AtlasTexture" id=234]
-atlas = ExtResource( 32 )
-region = Rect2( 32, 45, 32, 45 )
+[sub_resource type="AtlasTexture" id=246]
+atlas = ExtResource( 31 )
+region = Rect2( 144, 0, 48, 32 )
 
-[sub_resource type="AtlasTexture" id=235]
-atlas = ExtResource( 32 )
-region = Rect2( 32, 45, 32, 45 )
+[sub_resource type="AtlasTexture" id=247]
+atlas = ExtResource( 33 )
+region = Rect2( 0, 0, 48, 32 )
+
+[sub_resource type="AtlasTexture" id=248]
+atlas = ExtResource( 33 )
+region = Rect2( 48, 0, 48, 32 )
+
+[sub_resource type="AtlasTexture" id=249]
+atlas = ExtResource( 16 )
+region = Rect2( 0, 0, 48, 32 )
 
 [sub_resource type="SpriteFrames" id=199]
 animations = [ {
-"frames": [ SubResource( 236 ), SubResource( 237 ) ],
+"frames": [ SubResource( 239 ), SubResource( 240 ), SubResource( 241 ), SubResource( 242 ) ],
 "loop": true,
 "name": "Bat_batendo",
-"speed": 1.0
+"speed": 2.0
 }, {
-"frames": [  ],
+"frames": [ SubResource( 243 ), SubResource( 244 ), SubResource( 245 ), SubResource( 246 ) ],
 "loop": true,
 "name": "Bat_brilho_batendo",
 "speed": 2.0
 }, {
-"frames": [ SubResource( 233 ), SubResource( 234 ) ],
+"frames": [ SubResource( 247 ), SubResource( 248 ) ],
 "loop": true,
 "name": "Bat_brilho_normal",
-"speed": 1.0
+"speed": 2.0
 }, {
-"frames": [ SubResource( 235 ) ],
+"frames": [ SubResource( 249 ) ],
 "loop": true,
 "name": "Bat_normal",
 "speed": 5.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=89]
-extents = Vector2( 7.5, 8.5 )
+extents = Vector2( 7.5, 6 )
+
+[sub_resource type="AtlasTexture" id=272]
+atlas = ExtResource( 32 )
+region = Rect2( 48, 0, 48, 16 )
+
+[sub_resource type="AtlasTexture" id=273]
+atlas = ExtResource( 32 )
+region = Rect2( 0, 0, 48, 16 )
+
+[sub_resource type="AtlasTexture" id=274]
+atlas = ExtResource( 32 )
+region = Rect2( 0, 0, 48, 16 )
+
+[sub_resource type="SpriteFrames" id=275]
+animations = [ {
+"frames": [ SubResource( 272 ), SubResource( 273 ) ],
+"loop": true,
+"name": "brilho",
+"speed": 2.0
+}, {
+"frames": [ SubResource( 274 ) ],
+"loop": true,
+"name": "normal",
+"speed": 5.0
+} ]
 
 [sub_resource type="GDScript" id=238]
 script/source = "# Script para interação com o micro-ondas
@@ -1383,6 +1575,31 @@ extents = Vector2( 8.5, 7 )
 
 [sub_resource type="RectangleShape2D" id=98]
 extents = Vector2( 6.25, 9 )
+
+[sub_resource type="AtlasTexture" id=276]
+atlas = ExtResource( 36 )
+region = Rect2( 48, 0, 48, 32 )
+
+[sub_resource type="AtlasTexture" id=277]
+atlas = ExtResource( 36 )
+region = Rect2( 0, 0, 48, 32 )
+
+[sub_resource type="AtlasTexture" id=278]
+atlas = ExtResource( 36 )
+region = Rect2( 0, 0, 48, 32 )
+
+[sub_resource type="SpriteFrames" id=271]
+animations = [ {
+"frames": [ SubResource( 276 ), SubResource( 277 ) ],
+"loop": true,
+"name": "brilho",
+"speed": 2.0
+}, {
+"frames": [ SubResource( 278 ) ],
+"loop": true,
+"name": "normal",
+"speed": 5.0
+} ]
 
 [sub_resource type="AtlasTexture" id=57]
 atlas = ExtResource( 11 )
@@ -1496,27 +1713,27 @@ region = Rect2( 352, 32, 16, 32 )
 atlas = ExtResource( 5 )
 region = Rect2( 368, 32, 16, 32 )
 
-[sub_resource type="AtlasTexture" id=207]
+[sub_resource type="AtlasTexture" id=325]
 atlas = ExtResource( 5 )
 region = Rect2( 192, 32, 16, 32 )
 
-[sub_resource type="AtlasTexture" id=208]
+[sub_resource type="AtlasTexture" id=326]
 atlas = ExtResource( 5 )
 region = Rect2( 208, 32, 16, 32 )
 
-[sub_resource type="AtlasTexture" id=209]
+[sub_resource type="AtlasTexture" id=327]
 atlas = ExtResource( 5 )
 region = Rect2( 224, 32, 16, 32 )
 
-[sub_resource type="AtlasTexture" id=210]
+[sub_resource type="AtlasTexture" id=328]
 atlas = ExtResource( 5 )
 region = Rect2( 240, 32, 16, 32 )
 
-[sub_resource type="AtlasTexture" id=211]
+[sub_resource type="AtlasTexture" id=329]
 atlas = ExtResource( 5 )
 region = Rect2( 256, 32, 16, 32 )
 
-[sub_resource type="AtlasTexture" id=212]
+[sub_resource type="AtlasTexture" id=330]
 atlas = ExtResource( 5 )
 region = Rect2( 272, 32, 16, 32 )
 
@@ -1609,7 +1826,7 @@ animations = [ {
 "name": "idle_front",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 207 ), SubResource( 208 ), SubResource( 209 ), SubResource( 210 ), SubResource( 211 ), SubResource( 212 ) ],
+"frames": [ SubResource( 325 ), SubResource( 326 ), SubResource( 327 ), SubResource( 328 ), SubResource( 329 ), SubResource( 330 ) ],
 "loop": true,
 "name": "idle_side",
 "speed": 5.0
@@ -1632,6 +1849,35 @@ animations = [ {
 
 [sub_resource type="CircleShape2D" id=144]
 radius = 7.0
+
+[sub_resource type="Curve2D" id=306]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -9, 4, 0, 0, 0, 0, -72, 4, 0, 0, 0, 0, -72, 63, 0, 0, 0, 0, -21, 63, 0, 0, 0, 0, -20, 100, 0, 0, 0, 0, -70, 101 )
+}
+
+[sub_resource type="AtlasTexture" id=319]
+atlas = ExtResource( 40 )
+region = Rect2( 96, 32, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=320]
+atlas = ExtResource( 40 )
+region = Rect2( 112, 32, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=321]
+atlas = ExtResource( 40 )
+region = Rect2( 128, 32, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=322]
+atlas = ExtResource( 40 )
+region = Rect2( 144, 32, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=323]
+atlas = ExtResource( 40 )
+region = Rect2( 160, 32, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=324]
+atlas = ExtResource( 40 )
+region = Rect2( 176, 32, 16, 32 )
 
 [sub_resource type="AtlasTexture" id=75]
 atlas = ExtResource( 19 )
@@ -1657,24 +1903,90 @@ region = Rect2( 352, 32, 16, 32 )
 atlas = ExtResource( 19 )
 region = Rect2( 368, 32, 16, 32 )
 
+[sub_resource type="AtlasTexture" id=307]
+atlas = ExtResource( 40 )
+region = Rect2( 288, 64, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=308]
+atlas = ExtResource( 40 )
+region = Rect2( 304, 64, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=309]
+atlas = ExtResource( 40 )
+region = Rect2( 320, 64, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=310]
+atlas = ExtResource( 40 )
+region = Rect2( 336, 64, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=311]
+atlas = ExtResource( 40 )
+region = Rect2( 352, 64, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=312]
+atlas = ExtResource( 40 )
+region = Rect2( 368, 64, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=313]
+atlas = ExtResource( 40 )
+region = Rect2( 0, 64, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=314]
+atlas = ExtResource( 40 )
+region = Rect2( 16, 64, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=315]
+atlas = ExtResource( 40 )
+region = Rect2( 32, 64, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=316]
+atlas = ExtResource( 40 )
+region = Rect2( 48, 64, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=317]
+atlas = ExtResource( 40 )
+region = Rect2( 64, 64, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=318]
+atlas = ExtResource( 40 )
+region = Rect2( 80, 64, 16, 32 )
+
 [sub_resource type="SpriteFrames" id=81]
 animations = [ {
+"frames": [ SubResource( 319 ), SubResource( 320 ), SubResource( 321 ), SubResource( 322 ), SubResource( 323 ), SubResource( 324 ) ],
+"loop": true,
+"name": "idle_back",
+"speed": 5.0
+}, {
 "frames": [ SubResource( 75 ), SubResource( 76 ), SubResource( 77 ), SubResource( 78 ), SubResource( 79 ), SubResource( 80 ) ],
 "loop": true,
-"name": "atendente_idle",
+"name": "idle_front",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 307 ), SubResource( 308 ), SubResource( 309 ), SubResource( 310 ), SubResource( 311 ), SubResource( 312 ) ],
+"loop": true,
+"name": "run_front",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 313 ), SubResource( 314 ), SubResource( 315 ), SubResource( 316 ), SubResource( 317 ), SubResource( 318 ) ],
+"loop": true,
+"name": "run_side",
 "speed": 5.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=82]
-extents = Vector2( 24, 29 )
+extents = Vector2( 6.5, 7 )
 
-[sub_resource type="CircleShape2D" id=147]
-radius = 5.99998
+[sub_resource type="RectangleShape2D" id=305]
+extents = Vector2( 7, 9.49651 )
 
 [node name="Fase 1" type="Node2D"]
 pause_mode = 2
 position = Vector2( -1, 2 )
 script = ExtResource( 15 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Ui" type="CanvasLayer" parent="."]
 
@@ -1685,10 +1997,10 @@ margin_bottom = 12.0
 [node name="Receita" type="TextureRect" parent="Ui"]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_left = -90.0
-margin_top = -238.0
-margin_right = 230.0
-margin_bottom = -58.0
+margin_left = -83.0
+margin_top = -241.0
+margin_right = 237.0
+margin_bottom = -61.0
 rect_scale = Vector2( 1.3, 1.3 )
 texture = ExtResource( 27 )
 script = ExtResource( 29 )
@@ -1703,37 +2015,32 @@ margin_bottom = 206.077
 rect_scale = Vector2( 0.3, 0.3 )
 theme = SubResource( 109 )
 text = "Ingredientes
-- Ovo (geladeira)
-- Leite (geladeira) 
-- Farinha (embaixo
-da faca)
-- Chocolate (gela-
-deira)
 - Coloque-os na
 batedeira na
 ordem
+- Ovo 
+- Leite  
+- Farinha
+- Chocolate 
 "
 
 [node name="Modo de preparo" type="Label" parent="Ui/Receita"]
 modulate = Color( 0, 0, 0, 1 )
-margin_left = 266.923
-margin_top = 83.8462
-margin_right = 426.923
-margin_bottom = 290.846
+margin_left = 266.154
+margin_top = 88.4615
+margin_right = 426.154
+margin_bottom = 295.461
 rect_scale = Vector2( 0.3, 0.3 )
 theme = SubResource( 109 )
 text = " Modo de preparo
 - Pegue a forma 
-(em cima do balcáo)
 - Coloque a massa 
  do bolo
 - Coloque-o no 
  forno
 - Retire do forno
 - Leve o bolo para 
- a bancada que você 
--Otto colocará o
- recheio"
+ a bancada  "
 
 [node name="Terrain" type="Node2D" parent="."]
 
@@ -1835,10 +2142,10 @@ texture = ExtResource( 23 )
 position = Vector2( 161, 78 )
 texture = ExtResource( 30 )
 
-[node name="Fogão_animação" type="AnimatedSprite" parent="Areas/Fogão"]
-position = Vector2( 162, 75 )
+[node name="anim_fog" type="AnimatedSprite" parent="Areas/Fogão"]
+position = Vector2( 160, 78 )
 frames = SubResource( 189 )
-animation = "Fog_brilho"
+animation = "fog_fechando"
 
 [node name="Refrigerator" type="Area2D" parent="Areas"]
 position = Vector2( 104, 72 )
@@ -1849,8 +2156,13 @@ visible = false
 position = Vector2( 16, 19.75 )
 shape = SubResource( 18 )
 
+[node name="Anim_gel" type="AnimatedSprite" parent="Areas/Refrigerator"]
+position = Vector2( 16, 4 )
+frames = SubResource( 265 )
+animation = "normal"
+
 [node name="Batedeira" type="Area2D" parent="Areas"]
-position = Vector2( 4, -2 )
+position = Vector2( 13, 2 )
 script = ExtResource( 12 )
 __meta__ = {
 "_edit_group_": true
@@ -1866,18 +2178,18 @@ wait_time = 3.5
 one_shot = true
 
 [node name="Temporizador" type="AnimatedSprite" parent="Areas/Batedeira"]
-position = Vector2( 152, 59 )
+position = Vector2( 143, 56 )
 scale = Vector2( 0.8, 0.8 )
 frames = SubResource( 146 )
 animation = "Tempo_fogao"
 offset = Vector2( 70, -5 )
 
 [node name="Notificação" type="Sprite" parent="Areas/Batedeira"]
-position = Vector2( 208.6, 55.15 )
+position = Vector2( 200, 54 )
 scale = Vector2( 0.8, 0.826316 )
 texture = ExtResource( 23 )
 
-[node name="Batedeira_animação" type="AnimatedSprite" parent="Areas/Batedeira"]
+[node name="Anim_bat" type="AnimatedSprite" parent="Areas/Batedeira"]
 position = Vector2( 12, -3 )
 scale = Vector2( 0.9375, 0.875 )
 frames = SubResource( 199 )
@@ -1885,15 +2197,19 @@ animation = "Bat_brilho_normal"
 offset = Vector2( 200, 80 )
 
 [node name="Armario" type="Area2D" parent="Areas"]
+position = Vector2( 64, 84 )
 script = ExtResource( 14 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Areas/Armario"]
-visible = false
-position = Vector2( 64, 88.5 )
+position = Vector2( 0, 10 )
 shape = SubResource( 89 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Areas/Armario"]
+frames = SubResource( 275 )
+animation = "normal"
 
 [node name="Micro-ondas" type="Area2D" parent="Areas"]
 position = Vector2( 97, 92 )
@@ -1945,18 +2261,23 @@ script = ExtResource( 20 )
 position = Vector2( 29.75, 123 )
 shape = SubResource( 98 )
 
-[node name="TabuleiroVazio" type="Sprite" parent="Areas/Bancada"]
-position = Vector2( 18, 113 )
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Areas/Bancada"]
+position = Vector2( 16, 119 )
+frames = SubResource( 271 )
+animation = "normal"
+
+[node name="tabuleiro_vazio" type="Sprite" parent="Areas/Bancada"]
+position = Vector2( 16, 114 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 22 )
 
-[node name="Bolo" type="Sprite" parent="Areas/Bancada"]
-position = Vector2( 17, 111 )
+[node name="bolo" type="Sprite" parent="Areas/Bancada"]
+position = Vector2( 16, 113 )
 scale = Vector2( 0.8, 0.8 )
 texture = ExtResource( 26 )
 
-[node name="BoloPronto" type="Sprite" parent="Areas/Bancada"]
-position = Vector2( 17, 111 )
+[node name="bolo_pronto" type="Sprite" parent="Areas/Bancada"]
+position = Vector2( 16, 112 )
 scale = Vector2( 0.8, 0.8 )
 texture = ExtResource( 25 )
 
@@ -1978,7 +2299,7 @@ position = Vector2( 19, 284 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Personagens/NPC_Client"]
 frames = SubResource( 63 )
 animation = "sit"
-frame = 3
+frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Personagens/NPC_Client"]
@@ -2002,7 +2323,6 @@ position = Vector2( 3, -5 )
 position = Vector2( 3, -12 )
 frames = SubResource( 143 )
 animation = "idle_front"
-frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Personagens/Path2D/PathFollow2D/NPC_Otto"]
@@ -2016,9 +2336,6 @@ __meta__ = {
 "_edit_group_": true,
 "_editor_description_": "		"
 }
-
-[node name="AnimatedSprite" parent="Personagens/Player" index="0"]
-frame = 5
 
 [node name="Camera2D" type="Camera2D" parent="Personagens/Player"]
 visible = false
@@ -2034,27 +2351,34 @@ drag_margin_v_enabled = true
 smoothing_enabled = true
 editor_draw_drag_margin = true
 
-[node name="NPC_Atendente" type="Area2D" parent="Personagens"]
+[node name="Path2D2" type="Path2D" parent="Personagens"]
 position = Vector2( 88, 200 )
-__meta__ = {
-"_edit_group_": true
-}
+curve = SubResource( 306 )
+script = ExtResource( 39 )
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Personagens/NPC_Atendente"]
+[node name="PathFollow2D" type="PathFollow2D" parent="Personagens/Path2D2"]
+position = Vector2( -9, 4 )
+rotation = 3.14159
+rotate = false
+loop = false
+
+[node name="NPC_Atendente" type="Area2D" parent="Personagens/Path2D2/PathFollow2D"]
+rotation = 3.14159
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Personagens/Path2D2/PathFollow2D/NPC_Atendente"]
+position = Vector2( 7.62939e-06, -3.99998 )
 frames = SubResource( 81 )
-animation = "atendente_idle"
-frame = 4
+animation = "idle_back"
+frame = 3
 playing = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Personagens/NPC_Atendente"]
-visible = false
-position = Vector2( 0, 27 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Personagens/Path2D2/PathFollow2D/NPC_Atendente"]
+position = Vector2( -0.500031, 5 )
 shape = SubResource( 82 )
 
-[node name="Colisão NPC" type="CollisionShape2D" parent="Personagens/NPC_Atendente"]
-position = Vector2( 0, 10 )
-rotation = -2.87979
-shape = SubResource( 147 )
+[node name="Colisão NPC" type="CollisionShape2D" parent="Personagens/Path2D2/PathFollow2D/NPC_Atendente"]
+position = Vector2( -1, -0.999994 )
+shape = SubResource( 305 )
 
 [node name="Terrain3" type="Node2D" parent="."]
 
@@ -2082,7 +2406,7 @@ tile_data = PoolIntArray( 589826, 8, 0, 589827, 8, 1, 589828, 8, 1, 589829, 8, 1
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 21 )
-volume_db = -20.375
+volume_db = -10.0
 
 [connection signal="body_entered" from="Areas/Fogão" to="Areas/Fogão" method="_on_Fogo_body_entered"]
 [connection signal="body_exited" from="Areas/Fogão" to="Areas/Fogão" method="_on_Fogo_body_exited"]
@@ -2098,5 +2422,6 @@ volume_db = -20.375
 [connection signal="body_exited" from="Areas/Micro-ondas" to="Areas/Micro-ondas" method="_on_Microondas_body_exited"]
 [connection signal="body_entered" from="Areas/Bancada" to="Areas/Bancada" method="_on_Bancada_body_entered"]
 [connection signal="body_exited" from="Areas/Bancada" to="Areas/Bancada" method="_on_Bancada_body_exited"]
+[connection signal="body_entered" from="Personagens/Path2D2/PathFollow2D/NPC_Atendente" to="." method="_on_NPC_Atendente_body_entered"]
 
 [editable path="Personagens/Player"]

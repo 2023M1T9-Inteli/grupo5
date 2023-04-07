@@ -5,6 +5,7 @@ extends Path2D
 # Variável que recebe o plugin de dialogo 
 var dialogo1 = Dialogic.start('chefe 1')
 
+
 func _process(delta):
 	#Comando para o Player seguir o caminho feito pelo PathFollow2D
 	$PathFollow2D.set_offset($PathFollow2D.get_offset() + 55 * delta)
@@ -21,3 +22,5 @@ func _on_Area2D_body_entered(body):
 	# Quando o jogador entra na area o dialogo começa
 	if body.name == "Player_indro":
 		get_parent().add_child(dialogo1)
+
+		

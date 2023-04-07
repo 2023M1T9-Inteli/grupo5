@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Twisting - HSuspense.mp3-0af7de3c8f08cd897e40de2be4c3dc8e.mp3str"
+
+[deps]
+
+source_file="res://Assets/Art/Audio/Twisting - HSuspense.mp3"
+dest_files=[ "res://.import/Twisting - HSuspense.mp3-0af7de3c8f08cd897e40de2be4c3dc8e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

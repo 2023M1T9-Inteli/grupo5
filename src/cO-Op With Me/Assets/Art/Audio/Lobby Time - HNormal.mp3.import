@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Lobby Time - HNormal.mp3-cfccacae301af9f0d4c283682d7a70de.mp3str"
+
+[deps]
+
+source_file="res://Assets/Art/Audio/Lobby Time - HNormal.mp3"
+dest_files=[ "res://.import/Lobby Time - HNormal.mp3-cfccacae301af9f0d4c283682d7a70de.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

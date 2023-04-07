@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Devonshire Waltz Allegretto - Office.mp3-cf18db1630a98d2d4ab77d7077bccaeb.mp3str"
+
+[deps]
+
+source_file="res://Assets/Art/Audio/Devonshire Waltz Allegretto - Office.mp3"
+dest_files=[ "res://.import/Devonshire Waltz Allegretto - Office.mp3-cf18db1630a98d2d4ab77d7077bccaeb.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

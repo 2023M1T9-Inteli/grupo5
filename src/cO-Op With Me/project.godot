@@ -81,13 +81,14 @@ _global_script_class_icons={
 [application]
 
 config/name="cO-Op With Me"
-run/main_scene="res://Assets/Scenes/Introdução.tscn"
+run/main_scene="res://Assets/Scenes/Logo.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
 Global="*res://Assets/Scripts/Global.gd"
-Andar2="*res://Assets/Scripts/andar2.gd"
+Audio="*res://Assets/Scenes/Audio.tscn"
+GlobalVolume="*res://Assets/Scripts/Global_Volume.gd"
 
 [display]
 

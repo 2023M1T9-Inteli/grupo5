@@ -11,6 +11,7 @@ func _ready():
 	$Massa.visible = false
 	$Tabuleiro.visible = false
 	$Bolo_assado.visible = false
+	$Bolo.visible = false
 	
 func _process(_delta):
 	# As condicionais a seguir deixa visivel e invisivel os itens de acordo com as interações do jogador
@@ -49,5 +50,12 @@ func _process(_delta):
 		$Bolo_assado.visible = true
 	elif Global.pegou_bolo_assado == 0:
 		$Bolo_assado.visible = false
+	if Global.pegou_bolo_pronto == 1:
+		$Bolo.texture = load("res://Assets/Art/Interface/Bolo pronto.png")
+		$Bolo.visible = true
+	elif Global.pegou_bolo_pronto == 0:
+		$Bolo.visible = false
+	
+	
 
 

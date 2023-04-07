@@ -29,7 +29,7 @@
 			"character": "character-1679336522.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Parece que temos trabalho a fazer! \nVamos trabalhar juntos para conseguirmos terminar esse bolo. \nEnquanto você faz a massa eu posso fazer o recheio. Pode ser?\n"
+			"text": "Parece que temos trabalho a fazer! \nVamos trabalhar juntos para conseguirmos terminar esse bolo. \nEnquanto você faz a massa eu posso fazer o recheio. Pode ser?"
 		},
 		{
 			"animation": "5-fade_out_down.gd",

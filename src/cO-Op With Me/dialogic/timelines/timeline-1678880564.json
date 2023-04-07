@@ -43,7 +43,7 @@
 			"character": "character-1678880465.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Melhore!"
+			"text": "Acredito que buscar mais conhecimento sobre isso pode te ajudar, pense nisso e melhore!   "
 		},
 		{
 			"animation": "4-fade_out.gd",
@@ -93,12 +93,12 @@
 			"text": "Pode deixar Yasmin. Minha timidez às vezes me impede de falar. Vou trabalhar nisso para que não se repita. Obrigada pelo feedback!"
 		},
 		{
-			"change_scene": "res://Assets/Scenes/Pensamento.tscn",
-			"event_id": "dialogic_041"
-		},
-		{
 			"emit_signal": "change_scene",
 			"event_id": "dialogic_040"
+		},
+		{
+			"change_scene": "res://Assets/Scenes/Pensamento.tscn",
+			"event_id": "dialogic_041"
 		},
 		{
 			"event_id": "dialogic_022",

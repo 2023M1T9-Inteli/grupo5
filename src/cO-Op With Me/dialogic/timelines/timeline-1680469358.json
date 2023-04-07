@@ -1,0 +1,77 @@
+{
+	"events": [
+		{
+			"animation": "2-fade_in_up.gd",
+			"animation_length": 1,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1678732526.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Aqui, você acabou de aprender quando colaboração pode não ser uma boa ideia. \nSão nos casos de problemas emergenciais, problemas que precisam ser resolvidos de forma remota, que precise de um conhecimento muito especializado, ou necessite de uma ação corretiva.\nSua missão está quase completa viajante, irei te guiar até a etapa final."
+		},
+		{
+			"animation": "5-fade_out_down.gd",
+			"animation_length": 1,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1678732526.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"emit_signal": "end_sound",
+			"event_id": "dialogic_040"
+		},
+		{
+			"change_scene": "res://Assets/Scenes/Fase3.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"emit_signal": "tl_end",
+			"event_id": "dialogic_040"
+		},
+		{
+			"emit_signal": "chat7",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1680469358.json",
+		"name": "hospital7"
+	}
+}

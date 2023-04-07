@@ -51,7 +51,10 @@ func _physics_process(delta):
 	if Global.andar == 1 and $PathFollow2D.offset >= 243 and $PathFollow2D.offset < 281 and Global.colocou_bancada == 1:
 		$PathFollow2D/NPC_Otto/AnimatedSprite.play("run_front")
 
-	if Global.andar == 1 and $PathFollow2D.offset >= 281:
+	if Global.andar == 1 and $PathFollow2D.offset >= 281 and $PathFollow2D.unit_offset != 1:
 		$PathFollow2D/NPC_Otto/AnimatedSprite.play("idle_side")
 		$PathFollow2D/NPC_Otto/AnimatedSprite.flip_h = false
+	
+	if $PathFollow2D.unit_offset == 1:
+		$PathFollow2D/NPC_Otto/AnimatedSprite.play("idle_side")
 		

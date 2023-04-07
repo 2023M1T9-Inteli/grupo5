@@ -3,6 +3,8 @@ extends Area2D
 
 # Variável que diz se o jogador está na área
 var in_area = 0
+#Variável de estado do armário
+var estado_arm = 0
 
 func _on_Armario_body_entered(body):
 	# Condicional que diz que o jogador entrou da área
@@ -25,3 +27,14 @@ func _process(_delta):
 		Global.hide_slot = 1
 		Global.pegou_trigo = 1
 
+#Condições para a animação do armário
+	if estado_arm == 0:
+		$AnimatedSprite.play("normal")
+	if estado_arm == 1:
+		$AnimatedSprite.play("brilho")
+		
+#Condições para mudar a variável de estado
+	if Global.tem_leite == 0 and Global.tem_trigo == 1 and Global.pegou_trigo == 0:
+		estado_arm = 1
+	else:
+		estado_arm = 0

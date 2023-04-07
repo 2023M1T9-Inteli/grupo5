@@ -1,0 +1,21 @@
+{
+	"color": "#ffffffff",
+	"description": "",
+	"display_name": "Roberta",
+	"display_name_bool": true,
+	"id": "character-1680098265.json",
+	"mirror_portraits": false,
+	"name": "Roberta",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": -60,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Assets/Art/Interface/NPC1_MEDICO.png"
+		}
+	],
+	"scale": 450,
+	"theme": "theme-1678880292.cfg"
+}

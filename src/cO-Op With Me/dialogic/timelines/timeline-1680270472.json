@@ -1,0 +1,142 @@
+{
+	"events": [
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1678887143.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Olá Yasmim! Gostaria de dizer que eu pesquisei sobre colaboração. Quero estar sempre me desenvolvendo e acredito que posso dizer que eu entendi como colaborar com meus colegas."
+		},
+		{
+			"animation": "4-fade_out.gd",
+			"animation_length": 1,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1678887143.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1678880465.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Que ótimo [player_name]! São pessoas como você que estamos procurando, sempre buscando aperfeiçoar suas habilidades.. Parabéns!"
+		},
+		{
+			"animation": "4-fade_out.gd",
+			"animation_length": 1,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1678880465.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1678732526.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nossa jornada juntos acaba por aqui, [player_name].\n Ficamos muito felizes em ver sua trajetória e iremos sempre te acompanhar daqui do multiverso.. Leve o que aprendeu aqui para sua vida e cotidiano que logo você perceberá seu progresso.\nMeus parabéns e.... até mais!"
+		},
+		{
+			"emit_signal": "tl_end",
+			"event_id": "dialogic_040"
+		},
+		{
+			"change_scene": "res://Assets/Scenes/Desenvolvedores.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1680270472.json",
+		"name": "Final2"
+	}
+}

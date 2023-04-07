@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Assets/Art/Sprites Original/Tela Inicial/tela_vazia.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Art/Sprites Original/Tela Inicial/Tilemap/tela_vazia.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Scripts/Pensamento.gd" type="Script" id=2]
 
 [node name="Pensamento" type="Node2D"]

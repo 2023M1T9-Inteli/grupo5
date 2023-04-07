@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/geladeira_abrindo.mp3-b3d0fdf6506643df6e6ae1847c0b2a66.mp3str"
+
+[deps]
+
+source_file="res://Assets/Art/Audio/geladeira_abrindo.mp3"
+dest_files=[ "res://.import/geladeira_abrindo.mp3-b3d0fdf6506643df6e6ae1847c0b2a66.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,13 +1,21 @@
-[gd_scene load_steps=137 format=2]
+[gd_scene load_steps=160 format=2]
 
 [ext_resource path="res://Assets/Art/Sprites Original/Tilemap/19_Hospital_16x16.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Art/Sprites Original/Tilemap/Room_Builder_16x16.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Art/Sprites Original/Tilemap/19_Hospital_16x16 (1).png" type="Texture" id=3]
-[ext_resource path="res://Assets/Scripts/player.gd" type="Script" id=4]
+[ext_resource path="res://Assets/Scripts/Player.gd" type="Script" id=4]
 [ext_resource path="res://Assets/Art/Sprites Original/Player/PLAYER_MEDICO.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Scripts/botão.gd" type="Script" id=6]
-[ext_resource path="res://Assets/Art/Sprites Original/NPC/NPC2_MEDICO.png" type="Texture" id=7]
-[ext_resource path="res://Assets/Art/Sprites Original/NPC/NPC1_MEDICO.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Scripts/Fase2.gd" type="Script" id=6]
+[ext_resource path="res://Assets/Art/Sprites Original/Botão.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Art/Sprites Original/prancheta.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Art/Sprites Original/NPC/NPC1_MEDICO (1).png" type="Texture" id=9]
+[ext_resource path="res://Assets/Art/Sprites Original/NPC/NPC2_MEDICO (1).png" type="Texture" id=10]
+[ext_resource path="res://Assets/Art/Sprites Original/Player/PLAYER_MEDICO-Recovered.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Art/Interface/botao_e1.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Art/Interface/botao_e2.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Art/Interface/barra (1).png" type="Texture" id=14]
+[ext_resource path="res://Assets/Art/Interface/Notificação.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Art/Audio/Lobby Time - HNormal.mp3" type="AudioStream" id=16]
 
 [sub_resource type="TileSet" id=2]
 0/name = "Room_Builder_16x16.png 0"
@@ -2343,41 +2351,108 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 0/shapes = [  ]
 0/z_index = 0
 
-[sub_resource type="AtlasTexture" id=159]
-atlas = ExtResource( 7 )
+[sub_resource type="RectangleShape2D" id=194]
+extents = Vector2( 12.5004, 6.68862 )
+
+[sub_resource type="AtlasTexture" id=174]
+atlas = ExtResource( 9 )
 region = Rect2( 288, 32, 16, 32 )
 
-[sub_resource type="AtlasTexture" id=160]
-atlas = ExtResource( 7 )
+[sub_resource type="AtlasTexture" id=175]
+atlas = ExtResource( 9 )
 region = Rect2( 304, 32, 16, 32 )
 
-[sub_resource type="AtlasTexture" id=161]
-atlas = ExtResource( 7 )
+[sub_resource type="AtlasTexture" id=176]
+atlas = ExtResource( 9 )
 region = Rect2( 320, 32, 16, 32 )
 
-[sub_resource type="AtlasTexture" id=162]
-atlas = ExtResource( 7 )
+[sub_resource type="AtlasTexture" id=177]
+atlas = ExtResource( 9 )
 region = Rect2( 336, 32, 16, 32 )
 
-[sub_resource type="AtlasTexture" id=163]
-atlas = ExtResource( 7 )
+[sub_resource type="AtlasTexture" id=178]
+atlas = ExtResource( 9 )
 region = Rect2( 352, 32, 16, 32 )
 
-[sub_resource type="AtlasTexture" id=164]
-atlas = ExtResource( 7 )
+[sub_resource type="AtlasTexture" id=179]
+atlas = ExtResource( 9 )
 region = Rect2( 368, 32, 16, 32 )
 
 [sub_resource type="SpriteFrames" id=158]
 animations = [ {
-"frames": [ SubResource( 159 ), SubResource( 160 ), SubResource( 161 ), SubResource( 162 ), SubResource( 163 ), SubResource( 164 ) ],
+"frames": [ SubResource( 174 ), SubResource( 175 ), SubResource( 176 ), SubResource( 177 ), SubResource( 178 ), SubResource( 179 ) ],
 "loop": true,
 "name": "idle_front",
 "speed": 5.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=165]
-radius = 2.89971
-height = 6.18309
+radius = 1.68084
+height = 4.99198
+
+[sub_resource type="CapsuleShape2D" id=186]
+radius = 9.94777
+height = 11.8169
+
+[sub_resource type="AtlasTexture" id=180]
+atlas = ExtResource( 10 )
+region = Rect2( 288, 32, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=181]
+atlas = ExtResource( 10 )
+region = Rect2( 304, 32, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=182]
+atlas = ExtResource( 10 )
+region = Rect2( 320, 32, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=183]
+atlas = ExtResource( 10 )
+region = Rect2( 336, 32, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=184]
+atlas = ExtResource( 10 )
+region = Rect2( 352, 32, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=185]
+atlas = ExtResource( 10 )
+region = Rect2( 368, 32, 16, 32 )
+
+[sub_resource type="SpriteFrames" id=172]
+animations = [ {
+"frames": [ SubResource( 180 ), SubResource( 181 ), SubResource( 182 ), SubResource( 183 ), SubResource( 184 ), SubResource( 185 ) ],
+"loop": true,
+"name": "idle_front",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=173]
+radius = 2.09304
+height = 4.43483
+
+[sub_resource type="AtlasTexture" id=188]
+atlas = ExtResource( 11 )
+region = Rect2( 96, 416, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=189]
+atlas = ExtResource( 11 )
+region = Rect2( 112, 416, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=190]
+atlas = ExtResource( 11 )
+region = Rect2( 128, 416, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=191]
+atlas = ExtResource( 11 )
+region = Rect2( 144, 416, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=192]
+atlas = ExtResource( 11 )
+region = Rect2( 160, 416, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=193]
+atlas = ExtResource( 11 )
+region = Rect2( 176, 416, 16, 32 )
 
 [sub_resource type="AtlasTexture" id=104]
 atlas = ExtResource( 5 )
@@ -2525,6 +2600,11 @@ region = Rect2( 80, 64, 16, 32 )
 
 [sub_resource type="SpriteFrames" id=140]
 animations = [ {
+"frames": [ SubResource( 188 ), SubResource( 189 ), SubResource( 190 ), SubResource( 191 ), SubResource( 192 ), SubResource( 193 ) ],
+"loop": true,
+"name": "cirurgia",
+"speed": 5.0
+}, {
 "frames": [ SubResource( 104 ), SubResource( 105 ), SubResource( 106 ), SubResource( 107 ), SubResource( 108 ), SubResource( 109 ) ],
 "loop": true,
 "name": "idle_back",
@@ -2592,55 +2672,80 @@ height = 3.99072
 0/shapes = [  ]
 0/z_index = 0
 
-[sub_resource type="AtlasTexture" id=166]
-atlas = ExtResource( 8 )
-region = Rect2( 288, 32, 16, 32 )
+[sub_resource type="GDScript" id=187]
+script/source = "extends Control
 
-[sub_resource type="AtlasTexture" id=167]
-atlas = ExtResource( 8 )
-region = Rect2( 304, 32, 16, 32 )
+func _ready():
+	pass # Replace with function body.
 
-[sub_resource type="AtlasTexture" id=168]
-atlas = ExtResource( 8 )
-region = Rect2( 320, 32, 16, 32 )
+func _process(delta):
+	pass
+"
 
-[sub_resource type="AtlasTexture" id=169]
-atlas = ExtResource( 8 )
-region = Rect2( 336, 32, 16, 32 )
+[sub_resource type="AtlasTexture" id=195]
+atlas = ExtResource( 14 )
+region = Rect2( 0, 0, 48, 16 )
 
-[sub_resource type="AtlasTexture" id=170]
-atlas = ExtResource( 8 )
-region = Rect2( 352, 32, 16, 32 )
+[sub_resource type="AtlasTexture" id=196]
+atlas = ExtResource( 14 )
+region = Rect2( 48, 0, 48, 16 )
 
-[sub_resource type="AtlasTexture" id=171]
-atlas = ExtResource( 8 )
-region = Rect2( 368, 32, 16, 32 )
+[sub_resource type="AtlasTexture" id=197]
+atlas = ExtResource( 14 )
+region = Rect2( 96, 0, 48, 16 )
 
-[sub_resource type="SpriteFrames" id=172]
+[sub_resource type="AtlasTexture" id=198]
+atlas = ExtResource( 14 )
+region = Rect2( 144, 0, 48, 16 )
+
+[sub_resource type="AtlasTexture" id=199]
+atlas = ExtResource( 14 )
+region = Rect2( 192, 0, 48, 16 )
+
+[sub_resource type="SpriteFrames" id=200]
 animations = [ {
-"frames": [ SubResource( 166 ), SubResource( 167 ), SubResource( 168 ), SubResource( 169 ), SubResource( 170 ), SubResource( 171 ) ],
+"frames": [ SubResource( 195 ) ],
 "loop": true,
-"name": "idle_front",
+"name": "0",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 196 ) ],
+"loop": true,
+"name": "1",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 197 ) ],
+"loop": true,
+"name": "2",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 198 ) ],
+"loop": true,
+"name": "3",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 199 ) ],
+"loop": true,
+"name": "4",
 "speed": 5.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=173]
-radius = 4.0
-height = 6.0
-
 [node name="Fase2" type="Node2D"]
+script = ExtResource( 6 )
 
 [node name="Terrain" type="Node2D" parent="."]
 
 [node name="chão" type="TileMap" parent="Terrain"]
 tile_set = SubResource( 2 )
 cell_size = Vector2( 16, 16 )
+show_collision = true
 format = 1
 tile_data = PoolIntArray( 262144, 18, 0, 262145, 18, 0, 262146, 18, 0, 262147, 18, 0, 262148, 18, 0, 262149, 18, 0, 262150, 18, 0, 262151, 18, 0, 262152, 18, 0, 262153, 18, 0, 262154, 18, 0, 262155, 18, 0, 262156, 18, 0, 262157, 18, 0, 262158, 18, 0, 262159, 18, 0, 262160, 18, 0, 262161, 18, 0, 262162, 18, 0, 262163, 18, 0, 327680, 18, 0, 327681, 18, 0, 327682, 18, 0, 327683, 18, 0, 327684, 18, 0, 327685, 18, 0, 327686, 18, 0, 327687, 18, 0, 327688, 18, 0, 327689, 18, 0, 327690, 18, 0, 327691, 18, 0, 327692, 18, 0, 327693, 18, 0, 327694, 18, 0, 327695, 18, 0, 327696, 18, 0, 327697, 18, 0, 327698, 18, 0, 327699, 18, 0, 393216, 18, 0, 393217, 18, 0, 393218, 18, 0, 393219, 18, 0, 393220, 18, 0, 393221, 18, 0, 393222, 18, 0, 393223, 18, 0, 393224, 18, 0, 393225, 18, 0, 393226, 18, 0, 393227, 18, 0, 393228, 18, 0, 393229, 18, 0, 393230, 18, 0, 393231, 18, 0, 393232, 18, 0, 393233, 18, 0, 393234, 18, 0, 393235, 18, 0, 458752, 18, 0, 458753, 18, 0, 458754, 18, 0, 458755, 18, 0, 458756, 18, 0, 458757, 18, 0, 458758, 18, 0, 458759, 18, 0, 458760, 18, 0, 458761, 18, 0, 458762, 18, 0, 458763, 18, 0, 458764, 18, 0, 458765, 18, 0, 458766, 18, 0, 458767, 18, 0, 458768, 18, 0, 458769, 18, 0, 458770, 18, 0, 458771, 18, 0, 524288, 18, 0, 524289, 18, 0, 524290, 18, 0, 524291, 18, 0, 524292, 18, 0, 524293, 18, 0, 524294, 18, 0, 524295, 18, 0, 524296, 18, 0, 524297, 18, 0, 524298, 18, 0, 524299, 18, 0, 524300, 18, 0, 524301, 18, 0, 524302, 18, 0, 524303, 18, 0, 524304, 18, 0, 524305, 18, 0, 524306, 18, 0, 524307, 18, 0, 589824, 18, 0, 589825, 18, 0, 589826, 18, 0, 589827, 18, 0, 589828, 18, 0, 589829, 18, 0, 589830, 18, 0, 589831, 18, 0, 589832, 18, 0, 589833, 18, 0, 589834, 18, 0, 589835, 18, 0, 589836, 18, 0, 589837, 18, 0, 589838, 18, 0, 589839, 18, 0, 589840, 18, 0, 589841, 18, 0, 589842, 18, 0, 589843, 18, 0, 655360, 18, 0, 655361, 18, 0, 655362, 18, 0, 655363, 18, 0, 655364, 18, 0, 655365, 18, 0, 655366, 18, 0, 655367, 18, 0, 655368, 18, 0, 655369, 18, 0, 655370, 18, 0, 655371, 18, 0, 655372, 18, 0, 655373, 18, 0, 655374, 18, 0, 655375, 18, 0, 655376, 18, 0, 655377, 18, 0, 655378, 18, 0, 655379, 18, 0, 720896, 18, 0, 720897, 18, 0, 720898, 18, 0, 720899, 18, 0, 720900, 18, 0, 720901, 18, 0, 720902, 18, 0, 720903, 18, 0, 720904, 18, 0, 720905, 18, 0, 720906, 18, 0, 720907, 18, 0, 720908, 18, 0, 720909, 18, 0, 720910, 18, 0, 720911, 18, 0, 720912, 18, 0, 720913, 18, 0, 720914, 18, 0, 720915, 18, 0, 786432, 18, 0, 786433, 18, 0, 786434, 18, 0, 786435, 18, 0, 786436, 18, 0, 786437, 18, 0, 786438, 18, 0, 786439, 18, 0, 786440, 18, 0, 786441, 18, 0, 786442, 18, 0, 786443, 18, 0, 786444, 18, 0, 786445, 18, 0, 786446, 18, 0, 786447, 18, 0, 786448, 18, 0, 786449, 18, 0, 786450, 18, 0, 786451, 18, 0, 851968, 18, 0, 851969, 18, 0, 851970, 18, 0, 851971, 18, 0, 851972, 18, 0, 851973, 18, 0, 851974, 18, 0, 851975, 18, 0, 851976, 18, 0, 851977, 18, 0, 851978, 18, 0, 851979, 18, 0, 851980, 18, 0, 851981, 18, 0, 851982, 18, 0, 851983, 18, 0, 851984, 18, 0, 851985, 18, 0, 851986, 18, 0, 851987, 18, 0, 917504, 18, 0, 917505, 18, 0, 917506, 18, 0, 917507, 18, 0, 917508, 18, 0, 917509, 18, 0, 917510, 18, 0, 917511, 18, 0, 917512, 18, 0, 917513, 18, 0, 917514, 18, 0, 917515, 18, 0, 917516, 18, 0, 917517, 18, 0, 917518, 18, 0, 917519, 18, 0, 917520, 18, 0, 917521, 18, 0, 917522, 18, 0, 917523, 18, 0, 983040, 18, 0, 983041, 18, 0, 983042, 18, 0, 983043, 18, 0, 983044, 18, 0, 983045, 18, 0, 983046, 18, 0, 983047, 18, 0, 983048, 18, 0, 983049, 18, 0, 983050, 18, 0, 983051, 18, 0, 983052, 18, 0, 983053, 18, 0, 983054, 18, 0, 983055, 18, 0, 983056, 18, 0, 983057, 18, 0, 983058, 18, 0, 983059, 18, 0, 1048576, 18, 0, 1048577, 18, 0, 1048578, 18, 0, 1048579, 18, 0, 1048580, 18, 0, 1048581, 18, 0, 1048582, 18, 0, 1048583, 18, 0, 1048584, 18, 0, 1048585, 18, 0, 1048586, 18, 0, 1048587, 18, 0, 1048588, 18, 0, 1048589, 18, 0, 1048590, 18, 0, 1048591, 18, 0, 1048592, 18, 0, 1048593, 18, 0, 1048594, 18, 0, 1048595, 18, 0, 1114112, 18, 0, 1114113, 18, 0, 1114114, 18, 0, 1114115, 18, 0, 1114116, 18, 0, 1114117, 18, 0, 1114118, 18, 0, 1114119, 18, 0, 1114120, 18, 0, 1114121, 18, 0, 1114122, 18, 0, 1114123, 18, 0, 1114124, 18, 0, 1114125, 18, 0, 1114126, 18, 0, 1114127, 18, 0, 1114128, 18, 0, 1114129, 18, 0, 1114130, 18, 0, 1114131, 18, 0 )
 
 [node name="parede1" type="TileMap" parent="Terrain"]
 tile_set = SubResource( 55 )
 cell_size = Vector2( 16, 16 )
+show_collision = true
 format = 1
 tile_data = PoolIntArray( 0, 0, 0, 1, 0, 1, 2, 0, 1, 3, 0, 1, 4, 0, 1, 5, 0, 1, 6, 0, 1, 7, 0, 1, 8, 0, 1, 9, 0, 1, 10, 0, 1, 11, 0, 1, 12, 0, 1, 13, 0, 1, 14, 0, 1, 15, 0, 1, 16, 0, 1, 17, 0, 1, 18, 0, 1, 19, 0, 2, 65536, 0, 4, 65537, 0, 5, 65538, 0, 5, 65539, 0, 5, 65540, 0, 5, 65541, 0, 5, 65542, 0, 5, 65543, 0, 5, 65544, 0, 5, 65545, 0, 5, 65546, 0, 5, 65547, 0, 5, 65548, 0, 5, 65549, 0, 5, 65550, 0, 5, 65551, 0, 5, 65552, 0, 5, 65553, 0, 5, 65554, 0, 5, 65555, 0, 6, 131072, 0, 4, 131073, 0, 5, 131074, 0, 5, 131075, 0, 5, 131076, 0, 5, 131077, 0, 5, 131078, 0, 5, 131079, 0, 5, 131080, 0, 5, 131081, 0, 5, 131082, 0, 5, 131083, 0, 5, 131084, 0, 5, 131085, 0, 5, 131086, 0, 5, 131087, 0, 5, 131088, 0, 5, 131089, 0, 5, 131090, 0, 5, 131091, 0, 6, 196608, 0, 65536, 196609, 0, 65537, 196610, 0, 65537, 196611, 0, 65537, 196612, 0, 65537, 196613, 0, 65537, 196614, 0, 65537, 196615, 0, 65537, 196616, 0, 65537, 196617, 0, 65537, 196618, 0, 65537, 196619, 0, 65537, 196620, 0, 65537, 196621, 0, 65537, 196622, 0, 65537, 196623, 0, 65537, 196624, 0, 65537, 196625, 0, 65537, 196626, 0, 65537, 196627, 0, 65538, 393234, 1, 0, 393235, 1, 2, 458770, 1, 4, 458771, 1, 6, 524306, 1, 65536, 524307, 1, 65538 )
 
@@ -2658,6 +2763,7 @@ tile_data = PoolIntArray( 393216, 1, 0, 393217, 1, 1, 393218, 1, 1, 393219, 1, 1
 rotation = -0.000727627
 tile_set = SubResource( 14 )
 cell_size = Vector2( 16, 16 )
+show_collision = true
 format = 1
 tile_data = PoolIntArray( 65553, 40, 0, 131072, 15, 0, 131079, 536870916, 0, 131080, 25, 0, 131081, 6, 0, 131084, 536870916, 0, 131085, 536870964, 0, 196609, 36, 0, 196611, 36, 0, 196613, 36, 0, 196619, 3, 0, 196624, 53, 0, 196625, 53, 0, 196626, 53, 0, 393217, 58, 0, 393219, 58, 0, 393230, 59, 0, 458758, 63, 0, 458764, 62, 0, 458769, 74, 0, 458770, 536870966, 0, 589823, 536870977, 0, 524293, 76, 0, 589824, 38, 0, 589826, 39, 0, 589829, 76, 0, 655360, 21, 0, 655365, 76, 0, 655373, 65, 0, 655374, 31, 0, 720901, 76, 0, 851967, 536870977, 0, 851968, 38, 0, 851970, 39, 0, 917504, 21, 0, 917509, 76, 0, 917518, 536870973, 0, 917520, 68, 0, 983045, 76, 0, 1048581, 76, 0, 1114117, 76, 0 )
 
@@ -2667,49 +2773,84 @@ tile_set = SubResource( 86 )
 cell_size = Vector2( 16, 16 )
 cell_quadrant_size = 32
 cell_custom_transform = Transform2D( 32, 0, 0, 32, 0, 0 )
+show_collision = true
 format = 1
 tile_data = PoolIntArray( 786432, 0, 0, 917523, 536870916, 0, 1114112, 3, 0 )
 
 [node name="porta" type="TileMap" parent="."]
 tile_set = SubResource( 87 )
 cell_size = Vector2( 16, 16 )
+show_collision = true
 format = 1
 tile_data = PoolIntArray( 458761, 0, 0 )
 
 [node name="porta1" type="TileMap" parent="."]
 tile_set = SubResource( 88 )
 cell_size = Vector2( 16, 16 )
+show_collision = true
 format = 1
 tile_data = PoolIntArray( 458761, 0, 0 )
 
-[node name="NPC2" type="KinematicBody2D" parent="."]
+[node name="area_cirurgia" type="Area2D" parent="."]
+position = Vector2( 250, 212 )
+rotation = -0.000727629
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="NPC2"]
-position = Vector2( 160, 57 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="area_cirurgia"]
+position = Vector2( -1.9993, -2.68933 )
+shape = SubResource( 194 )
+
+[node name="NPC1" type="KinematicBody2D" parent="."]
+position = Vector2( 34, 8 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="NPC1"]
+position = Vector2( 171, 177 )
 frames = SubResource( 158 )
 animation = "idle_front"
 playing = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC2"]
-visible = false
-position = Vector2( 160, 71 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC1"]
+position = Vector2( 171, 186 )
 rotation = 1.51687
+scale = Vector2( 3.59651, 1.16953 )
 shape = SubResource( 165 )
 
+[node name="Area2D" type="Area2D" parent="NPC1"]
+position = Vector2( 222, 193 )
+rotation = 1.6138
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC1/Area2D"]
+position = Vector2( 13.1823, 50.4799 )
+shape = SubResource( 186 )
+
+[node name="NPC2" type="KinematicBody2D" parent="."]
+position = Vector2( 90, -26 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="NPC2"]
+position = Vector2( 186, 211 )
+frames = SubResource( 172 )
+animation = "idle_front"
+frame = 5
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC2"]
+position = Vector2( 186, 221 )
+rotation = 1.6138
+scale = Vector2( 2.84345, 1.16887 )
+shape = SubResource( 173 )
+
 [node name="player" type="KinematicBody2D" parent="."]
-position = Vector2( 159, 72 )
-rotation = -0.000727627
+position = Vector2( 160, 77 )
+rotation = -0.000727629
 script = ExtResource( 4 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="player"]
-position = Vector2( -17.9949, -7.0131 )
 frames = SubResource( 140 )
-animation = "idle_front"
+animation = "cirurgia"
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
-visible = false
-position = Vector2( -19.0036, 4.98616 )
+position = Vector2( -0.00656128, 9 )
 rotation = 1.61324
 shape = SubResource( 141 )
 
@@ -2722,17 +2863,27 @@ limit_bottom = 288
 smoothing_enabled = true
 editor_draw_limits = true
 
+[node name="BotaoE1" type="Sprite" parent="player"]
+position = Vector2( 22.0109, -14.984 )
+texture = ExtResource( 12 )
+
+[node name="BotaoE2" type="Sprite" parent="player"]
+position = Vector2( 22.0102, -13.984 )
+texture = ExtResource( 13 )
+
 [node name="paredeMeio" type="Node2D" parent="."]
 
 [node name="porta2" type="TileMap" parent="paredeMeio"]
 tile_set = SubResource( 89 )
 cell_size = Vector2( 16, 16 )
+show_collision = true
 format = 1
 tile_data = PoolIntArray( 393225, 0, 0 )
 
 [node name="porta3" type="TileMap" parent="paredeMeio"]
 tile_set = SubResource( 90 )
 cell_size = Vector2( 16, 16 )
+show_collision = true
 format = 1
 tile_data = PoolIntArray( 393225, 0, 0 )
 
@@ -2770,9 +2921,10 @@ polygon = PoolVector2Array( 87, 64, 104, 65, 105, 89, 87, 89 )
 polygon = PoolVector2Array( 100, 145, 101, 157, 129, 157, 131, 144 )
 
 [node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PoolVector2Array( 231, 183, 232, 204, 266, 204, 266, 183 )
+polygon = PoolVector2Array( 231, 183, 232, 198, 266, 199, 266, 183 )
 
 [node name="CollisionPolygon2D10" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2( -1, 0 )
 polygon = PoolVector2Array( 226, 228, 225, 251, 272, 251, 272, 228 )
 
 [node name="CollisionPolygon2D11" type="CollisionPolygon2D" parent="StaticBody2D"]
@@ -2790,42 +2942,383 @@ polygon = PoolVector2Array( 86, 224, 89, 224, 89, 224, 89, 286, 86, 286 )
 [node name="CollisionPolygon2D15" type="CollisionPolygon2D" parent="StaticBody2D"]
 polygon = PoolVector2Array( 86, 143, 90, 143, 88, 192, 86, 192 )
 
-[node name="botão" type="Control" parent="."]
+[node name="BotaoEscolha1" type="Control" parent="."]
 visible = false
 margin_left = 159.0
 margin_top = 72.0
 margin_right = 199.0
 margin_bottom = 112.0
-script = ExtResource( 6 )
+script = SubResource( 187 )
 
-[node name="Button" type="Button" parent="botão"]
-margin_left = -120.0
-margin_top = 109.0
-margin_right = -19.0
-margin_bottom = 135.0
-
-[node name="Button2" type="Button" parent="botão"]
-margin_left = 4.0
-margin_top = 108.0
-margin_right = 110.0
-margin_bottom = 135.0
-
-[node name="ColorRect" type="ColorRect" parent="botão"]
+[node name="ColorRect" type="ColorRect" parent="BotaoEscolha1"]
 margin_left = -165.0
 margin_top = -72.0
 margin_right = 165.0
 margin_bottom = 222.0
 color = Color( 0, 0, 0, 0.713726 )
 
-[node name="NPC3" type="KinematicBody2D" parent="."]
+[node name="botao1" type="TextureButton" parent="BotaoEscolha1"]
+margin_left = -151.0
+margin_top = 177.0
+margin_right = -33.0
+margin_bottom = 210.0
+texture_normal = ExtResource( 7 )
+expand = true
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="NPC3"]
-position = Vector2( 185, 69 )
-frames = SubResource( 172 )
-animation = "idle_front"
+[node name="Label" type="Label" parent="BotaoEscolha1/botao1"]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0.0156863, 0, 0, 1 )
+margin_left = 5.0
+margin_top = 8.99997
+margin_right = 280.0
+margin_bottom = 40.0
+rect_scale = Vector2( 0.4, 0.4 )
+text = "Examinando os sintomas, acredito que há 
+divergências e que não seja gastroenterite."
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC3"]
+[node name="botao2" type="TextureButton" parent="BotaoEscolha1"]
+margin_left = 37.0
+margin_top = 177.0
+margin_right = 152.0
+margin_bottom = 208.0
+texture_normal = ExtResource( 7 )
+expand = true
+
+[node name="Label" type="Label" parent="BotaoEscolha1/botao2"]
+modulate = Color( 0.0470588, 0.00392157, 0.00392157, 1 )
+self_modulate = Color( 0.0196078, 0, 0, 1 )
+margin_left = 5.0
+margin_top = 9.0
+margin_right = 308.0
+margin_bottom = 40.0
+rect_scale = Vector2( 0.4, 0.4 )
+text = "Sim, os sintomas indicam que é
+gastroenterite!"
+
+[node name="PranchetaPac" type="Sprite" parent="BotaoEscolha1"]
+position = Vector2( -230, 112 )
+scale = Vector2( 1.10781, 1.03889 )
+texture = ExtResource( 8 )
+
+[node name="Label" type="Label" parent="BotaoEscolha1/PranchetaPac"]
+modulate = Color( 0.0352941, 0, 0, 1 )
+self_modulate = Color( 0.0823529, 0.00784314, 0.00784314, 1 )
+margin_left = 103.0
+margin_top = -31.0
+margin_right = 248.0
+margin_bottom = 187.0
+rect_scale = Vector2( 0.3, 0.3 )
+text = "Ficha Paciente
+Homem de 24 anos
+Sem histórico
+de doenças genéticas
+
+Sintomas:
+Febre de 38ºC
+Náusea
+Vômito
+Diarréia
+Dor abdominal no lado
+inferior direito
+"
+
+[node name="PranchetaGas" type="Sprite" parent="BotaoEscolha1"]
+position = Vector2( -43.3752, 111 )
+scale = Vector2( 1.12109, 1.03333 )
+texture = ExtResource( 8 )
+
+[node name="Label" type="Label" parent="BotaoEscolha1/PranchetaGas"]
+modulate = Color( 0.0470588, 0, 0, 1 )
+self_modulate = Color( 0.054902, 0.00392157, 0.00392157, 1 )
+margin_left = 102.0
+margin_top = -32.0
+margin_right = 247.0
+margin_bottom = 203.0
+rect_scale = Vector2( 0.3, 0.3 )
+text = "Gastroenterite:
+inflamação do trato
+gastrointestinal
+causada por infecções
+
+Sintomas:
+Diarréia
+Febre
+Dor abdominal difus
+a (por toda a barriga)
+Vômito
+Náusea
+"
+
+[node name="BotaoEscolha2" type="Control" parent="."]
 visible = false
-position = Vector2( 184, 80 )
-rotation = 1.6138
-shape = SubResource( 173 )
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="BotaoEscolha2"]
+margin_right = 322.0
+margin_bottom = 288.0
+color = Color( 0.0352941, 0, 0, 0.713726 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="botao3" type="TextureButton" parent="BotaoEscolha2"]
+margin_left = 193.0
+margin_top = 240.0
+margin_right = 307.0
+margin_bottom = 272.0
+texture_normal = ExtResource( 7 )
+expand = true
+
+[node name="Label" type="Label" parent="BotaoEscolha2/botao3"]
+modulate = Color( 0.0941176, 0.00784314, 0.00784314, 1 )
+self_modulate = Color( 0.0666667, 0.00392157, 0.00392157, 1 )
+margin_left = 5.0
+margin_top = 8.0
+margin_right = 245.0
+margin_bottom = 39.0
+rect_scale = Vector2( 0.4, 0.4 )
+text = "Sim, os sintomas indicam que é
+diverticulite!"
+
+[node name="botao4" type="TextureButton" parent="BotaoEscolha2"]
+margin_left = 13.0
+margin_top = 241.0
+margin_right = 128.0
+margin_bottom = 273.0
+texture_normal = ExtResource( 7 )
+expand = true
+
+[node name="Label" type="Label" parent="BotaoEscolha2/botao4"]
+modulate = Color( 0.0196078, 0, 0, 1 )
+self_modulate = Color( 0.027451, 0.00392157, 0.00392157, 1 )
+margin_left = 4.0
+margin_top = 8.0
+margin_right = 270.0
+margin_bottom = 39.0
+rect_scale = Vector2( 0.4, 0.4 )
+text = "Examinando os sintomas, acredito que há
+divergências e que não seja diverticulite."
+
+[node name="PranchetaPac" type="Sprite" parent="BotaoEscolha2"]
+position = Vector2( -71, 173 )
+scale = Vector2( 1.15, 1.13333 )
+texture = ExtResource( 8 )
+
+[node name="Label" type="Label" parent="BotaoEscolha2/PranchetaPac"]
+modulate = Color( 0.0705882, 0.00392157, 0.00392157, 1 )
+self_modulate = Color( 0.0509804, 0.00392157, 0.00392157, 1 )
+margin_left = 102.391
+margin_top = -32.0
+margin_right = 247.391
+margin_bottom = 186.0
+rect_scale = Vector2( 0.3, 0.3 )
+text = "Ficha Paciente
+Homem de 24 anos
+Sem histórico
+de doenças genéticas
+
+Sintomas:
+Febre 
+Náusea
+Vômito
+Diarréia
+Dor abdominal no lado
+inferior direito
+"
+
+[node name="PranchetaDiv" type="Sprite" parent="BotaoEscolha2"]
+position = Vector2( 104, 173 )
+scale = Vector2( 1.15625, 1.14444 )
+texture = ExtResource( 8 )
+
+[node name="Label" type="Label" parent="BotaoEscolha2/PranchetaDiv"]
+modulate = Color( 0.0470588, 0.00784314, 0.00784314, 1 )
+self_modulate = Color( 0.0470588, 0.00392157, 0.00392157, 1 )
+margin_left = 102.054
+margin_top = -32.3301
+margin_right = 250.054
+margin_bottom = 202.67
+rect_scale = Vector2( 0.3, 0.3 )
+text = "Diverticulite:
+É uma inflamação de
+pequenas bolsas que 
+se formam nas 
+paredes do cólon.
+
+Sintomas:
+Náusea
+Dor abdominal no
+lado esquerdo
+Vômito
+Diarréia
+Febre
+"
+
+[node name="BotaoEscolha3" type="Control" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="BotaoEscolha3"]
+margin_right = 322.0
+margin_bottom = 288.0
+color = Color( 0.0431373, 0, 0, 0.713726 )
+
+[node name="botao5" type="TextureButton" parent="BotaoEscolha3"]
+margin_left = 193.0
+margin_top = 248.0
+margin_right = 302.0
+margin_bottom = 280.0
+texture_normal = ExtResource( 7 )
+expand = true
+
+[node name="Label" type="Label" parent="BotaoEscolha3/botao5"]
+modulate = Color( 0.0313726, 0, 0, 1 )
+self_modulate = Color( 0.0352941, 0.00392157, 0.00392157, 1 )
+margin_left = 5.0
+margin_top = 8.0
+margin_right = 332.0
+margin_bottom = 35.0
+rect_scale = Vector2( 0.4, 0.4 )
+text = "Sim, os sintomas indicam que é
+apendicite!"
+
+[node name="botao6" type="TextureButton" parent="BotaoEscolha3"]
+margin_left = 15.0
+margin_top = 248.0
+margin_right = 127.0
+margin_bottom = 280.0
+texture_normal = ExtResource( 7 )
+expand = true
+
+[node name="Label" type="Label" parent="BotaoEscolha3/botao6"]
+modulate = Color( 0.0470588, 0.00392157, 0.00392157, 1 )
+self_modulate = Color( 0.0392157, 0.00392157, 0.00392157, 1 )
+margin_left = 4.0
+margin_top = 8.0
+margin_right = 275.0
+margin_bottom = 39.0
+rect_scale = Vector2( 0.4, 0.4 )
+text = "Examinando os sintomas, acredito que 
+há divergências e que não seja
+apendicite."
+
+[node name="PranchetaPac" type="Sprite" parent="BotaoEscolha3"]
+position = Vector2( -64, 180 )
+scale = Vector2( 1.075, 1.10556 )
+texture = ExtResource( 8 )
+
+[node name="Label" type="Label" parent="BotaoEscolha3/PranchetaPac"]
+modulate = Color( 0.054902, 0.00392157, 0.00392157, 1 )
+self_modulate = Color( 0.0470588, 0.00392157, 0.00392157, 1 )
+margin_left = 103.256
+margin_top = -31.6583
+margin_right = 248.256
+margin_bottom = 186.342
+rect_scale = Vector2( 0.3, 0.3 )
+text = "Ficha Paciente
+Homem de 24 anos
+Sem histórico
+de doenças genéticas
+
+Sintomas:
+Febre de 38ºC
+Náusea
+Vômito
+Diarréia
+Dor abdominal no lado
+inferior direito
+"
+
+[node name="PranchetaApe" type="Sprite" parent="BotaoEscolha3"]
+position = Vector2( 118, 179 )
+scale = Vector2( 1.075, 1.125 )
+texture = ExtResource( 8 )
+
+[node name="Label" type="Label" parent="BotaoEscolha3/PranchetaApe"]
+modulate = Color( 0.0627451, 0.00392157, 0.00392157, 1 )
+self_modulate = Color( 0.0470588, 0.00392157, 0.00392157, 1 )
+margin_left = 101.209
+margin_top = -31.8889
+margin_right = 256.209
+margin_bottom = 186.111
+rect_scale = Vector2( 0.3, 0.3 )
+text = "Apendicite:
+inflamação do apêndice,
+órgão localizado no
+intestino grosso.
+
+Sintomas:
+Dor abdominal no lado 
+inferior direito
+Náusea
+Vômito
+Febre
+Diarréia
+"
+
+[node name="NotaBotErrado" type="ColorRect" parent="."]
+visible = false
+margin_left = 121.0
+margin_top = 206.0
+margin_right = 197.0
+margin_bottom = 236.0
+color = Color( 0.890196, 0.34902, 0.34902, 1 )
+
+[node name="Label" type="Label" parent="NotaBotErrado"]
+margin_left = 1.0
+margin_top = 9.0
+margin_right = 243.0
+margin_bottom = 57.0
+rect_scale = Vector2( 0.3, 0.3 )
+text = "Compare novamente as duas fichas e
+veja se todos os sintomas coincidem
+ou não"
+
+[node name="NotaBotCerto" type="ColorRect" parent="."]
+visible = false
+margin_left = 121.0
+margin_top = 206.0
+margin_right = 197.0
+margin_bottom = 236.0
+color = Color( 0.286275, 1, 0.329412, 1 )
+
+[node name="Label" type="Label" parent="NotaBotCerto"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 1.0
+margin_top = 6.0
+margin_right = 243.0
+margin_bottom = 62.0
+rect_scale = Vector2( 0.3, 0.3 )
+text = "Parabéns! Você respondeu certo, agora 
+aperte a tecla \"E\" para voltar para o 
+diálogo ..."
+
+[node name="notificacao2" type="Sprite" parent="."]
+position = Vector2( 266, 172 )
+texture = ExtResource( 15 )
+
+[node name="notificacao" type="Sprite" parent="."]
+position = Vector2( 213, 167 )
+texture = ExtResource( 15 )
+
+[node name="barra" type="AnimatedSprite" parent="."]
+position = Vector2( 248, 156 )
+frames = SubResource( 200 )
+animation = "0"
+playing = true
+
+[node name="Trilha_Sonora" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 16 )
+autoplay = true
+
+[connection signal="body_entered" from="area_cirurgia" to="." method="_on_area_cirurgia_body_entered"]
+[connection signal="body_exited" from="area_cirurgia" to="." method="_on_area_cirurgia_body_exited"]
+[connection signal="body_entered" from="NPC1/Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="pressed" from="BotaoEscolha1/botao1" to="." method="_on_botao1_pressed"]
+[connection signal="pressed" from="BotaoEscolha1/botao2" to="." method="_on_botao2_pressed"]
+[connection signal="pressed" from="BotaoEscolha2/botao3" to="." method="_on_botao3_pressed"]
+[connection signal="pressed" from="BotaoEscolha2/botao4" to="." method="_on_botao4_pressed"]
+[connection signal="pressed" from="BotaoEscolha3/botao5" to="." method="_on_botao5_pressed"]
+[connection signal="pressed" from="BotaoEscolha3/botao6" to="." method="_on_botao6_pressed"]

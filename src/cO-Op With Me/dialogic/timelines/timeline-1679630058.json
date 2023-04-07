@@ -72,7 +72,7 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Uaau, está perfeito! Meus agradecimentos a quem fez!\n"
+			"text": "Uaau, está perfeito! Meus agradecimentos a quem fez!"
 		},
 		{
 			"animation": "4-fade_out.gd",
@@ -133,8 +133,16 @@
 			"text": "Agora guarde esse conceito, será importante para as próximas fases. Boa sorte!"
 		},
 		{
+			"emit_signal": "end_sound",
+			"event_id": "dialogic_040"
+		},
+		{
 			"change_scene": "res://Assets/Scenes/Fase2.tscn",
 			"event_id": "dialogic_041"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0
 		}
 	],
 	"metadata": {

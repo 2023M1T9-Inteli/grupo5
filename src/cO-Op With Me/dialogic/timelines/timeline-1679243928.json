@@ -25,7 +25,7 @@
 			"character": "character-1678732526.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Olá  (nome do player)! Eu sou o (nome do robô), o robô do multiverso. \nQuando você pesquisou sobre colaboração em seu computador, nós, seres dos mundos paralelos, decidimos atender ao seu chamado e te ensinar a colaborar na prática. \nNada como o bom cotidiano para aprender. Para isso, você irá viver em vários mundos diferentes, e temos a confiança de que ao final você terá aprendido tudo que precisa.\nPara se mover, você tem duas opções: as setas de direita, esquerda, cima e baixo do teclado, ou as letras W, A, S e D. \nPara pegar e soltar objetos ou interagir com outros personagens, você deve usar a letra E. \nAproveite sua jornada e boa sorte, (nome do player)!"
+			"text": "Olá  [player_name]! Eu sou o C.T, o robô do multiverso. \nQuando você pesquisou sobre colaboração em seu computador, nós, seres dos mundos paralelos, decidimos atender ao seu chamado e te ensinar a colaborar na prática. \nNada como o bom cotidiano para aprender. Para isso, você irá viver em vários mundos diferentes, e temos a confiança de que ao final você terá aprendido tudo que precisa.\nPara se mover, você tem duas opções: as setas de direita, esquerda, cima e baixo do teclado, ou as letras W, A, S e D. \nPara pegar e soltar objetos ou interagir com outros personagens, você deve usar a letra E. \nAproveite sua jornada e boa sorte, [player_name]!"
 		},
 		{
 			"animation": "5-fade_out_down.gd",
