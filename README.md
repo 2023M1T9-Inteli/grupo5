@@ -4,14 +4,9 @@
 <a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
-<h1>cO-Op with me </h1>
-<p align="center">
-<img src="cO-Op.png" alt="Logo cO-Op with me" border="0"></a>
-</p>
-
 
 ## Equipe Talk²Me
-## <a href="https://www.linkedin.com/in/ana-clara-madureira-marques-a6019526a/">Ana Marques</a>, <a href="https://www.linkedin.com/in/kaleb-carvalho/">Kaleb Carvalho</a>, <a href="https://www.linkedin.com/in/keylla-oliveira1206/">Keylla Oliveira</a>, <a href="https://www.linkedin.com/in/lauroemmanuelrafael/">Lauro Rafael</a>, <a href="https://www.linkedin.com/in/mateus-mar%C3%A7al-212953264/">Mateus Marcal</a>, <a href="https://www.linkedin.com/in/thiago-goulart-de-oliveira/">Thiago Goulart</a>
+## <a href="https://www.linkedin.com/in/ana-clara-madureira-marques-a6019526a/">Ana Marques</a>, <a href="https://github.com/KalebIsaias">Kaleb Carvalho</a>, <a href="https://github.com/y2keylla">Keylla Oliveira</a>, <a href="https://github.com/LauroEmm">Lauro Rafael</a>, <a href="https://github.com/mateusmbg">Mateus Marcal</a>, <a href="https://www.linkedin.com/in/thiago-goulart-de-oliveira/">Thiago Goulart</a>
 
 <p align="center">
 <img src="time.png" alt="Foto dos integrantes da equipe" border="0"></a>
