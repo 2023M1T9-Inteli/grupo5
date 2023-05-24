@@ -6,7 +6,7 @@
 
 
 ## Equipe Talk²Me
-## <a href="https://www.linkedin.com/in/ana-clara-madureira-marques-a6019526a/">Ana Marques</a>, <a href="https://github.com/KalebIsaias">Kaleb Carvalho</a>, <a href="https://github.com/y2keylla">Keylla Oliveira</a>, <a href="https://github.com/LauroEmm">Lauro Rafael</a>, <a href="https://github.com/mateusmbg">Mateus Marcal</a>, <a href="https://www.linkedin.com/in/thiago-goulart-de-oliveira/">Thiago Goulart</a>
+## <a href="https://www.linkedin.com/in/ana-clara-madureira-marques-a6019526a/">Ana Marques</a>, <a href="https://github.com/KalebIsaias">Kaleb Carvalho</a>, <a href="https://github.com/y2keylla">Keylla Oliveira</a>, <a href="https://github.com/LauroEmm">Lauro Rafael</a>, <a href="https://github.com/mateusmbg">Mateus Marcal</a>, <a href="https://github.com/thigoulart">Thiago Goulart</a>
 
 <p align="center">
 <img src="time.png" alt="Foto dos integrantes da equipe" border="0"></a>
