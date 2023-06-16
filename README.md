@@ -1,7 +1,7 @@
 # Inteli - Instituto de Tecnologia e Liderança 
 
 <p align="center">
-<a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
+<a href= "https://www.inteli.edu.br/"><img src="https://s3.amazonaws.com/gupy5/production/companies/26702/career/63484/images/2022-04-28_16-56_logo.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
 
@@ -13,6 +13,10 @@
 
 📜 cO-Op with me é um jogo criado para a Cia de Talentos com o objetivo de ensinar aos players o conceito de colaboração.
 Ele foi inspirado na ideia de multiverso presente no filme "Tudo em Todo o Lugar ao Mesmo Tempo", assim, ensinando à quem jogar como a colaboração funciona em diferentes cenários e contextos.
+
+## 🎮 Jogue agora
+
+Para acessar o jogo diretamente do seu navegador entre no seguinte link: [Talk²Me](https://2023m1t9-inteli.github.io/grupo5/)
 
 ## 🛠 Estrutura de pastas
 
